@@ -1,0 +1,92 @@
+<!-- Header -->
+<header class="header">
+  {% if site.info_banner.show == true %}
+  {%- include info-banner.html -%} <!-- Include info banner if show is true -->
+  {% elsif site.info_banner.show != true %}
+  {% endif %}
+
+  <div class="header-menu {% if page.nav-dark-mode == true %} header-menu-3 {% else %} header-menu-2 {% endif %}" id="sticky">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.bootstrap.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    {%- assign page_path_no_extension = page.path | remove: '.markdown' | prepend: '/' -%}
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="{% if page.nav-dark-mode == true %} {{ site.baseurl }}/assets/img/logo/f3-blueridge-dark.svg {% else %} {{ site.baseurl }}/assets/img/logo/f3-blueridge-light.svg {% endif %}" alt="logo">
+        </a>
+        <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="menu_toggle">
+            <span class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="hamburger-cross">
+              <span></span>
+              <span></span>
+            </span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav menu ms-auto">
+            {% assign sortedPages = site.pages | sort: "menu-order" %}
+            {% for page in sortedPages %}
+            {% if page.show-in-nav %} <!-- Check if the page should be shown in the navigation -->
+            {% if page.submenu %} <!-- Check if the page has a submenu -->
+            <li class="nav-item dropdown submenu">
+              <a class="nav-link dropdown-toggle {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | relative_url }}" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ page.title }}
+              </a>
+              <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
+              <ul class="dropdown-menu">
+                {% if page.submenu.size > 0 %} <!-- Check if the submenu has items -->
+                {% assign sortedSubmenu = page.submenu | sort: "menu-order" %}
+                {% for submenuLevel1 in sortedSubmenu %}
+                {% if submenuLevel1.flyout %} <!-- Check if the submenu item has a flyout submenu -->
+                <li class="nav-item dropdown flyout">
+                  <a class="nav-link dropdown-toggle {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url | relative_url }}" role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ submenuLevel1.url }}
+                  </a>
+                  <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                    data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+                    {% if submenuLevel1.flyout.size > 0 %} <!-- Check if the flyout submenu has items -->
+                    {% assign sortedSubmenuLevel2 = submenuLevel1.flyout | sort: "menu-order" %}
+                    {% for submenuLevel2 in sortedSubmenuLevel2 %}
+                    <li class="nav-item">
+                      <a class="nav-link {% if submenuLevel2.url == page.permalink and submenuLevel2.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel2.url }}">{{ submenuLevel2.title }}</a>
+                    </li>
+                    {% endfor %}
+                    {% endif %}
+                  </ul>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url }}">{{ submenuLevel1.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+              </ul>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <a class="theme-btn" href="/get-started">I’M NEW HERE</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- Header end -->

@@ -1,0 +1,49 @@
+<!-- Info Banner start-->
+<div class="header-top py-2 d-none d-lg-block">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-10">
+                <div class="header-info-left">
+                    <p>
+                        <span class="pe-1">
+                            <i class="bi bi-megaphone-fill pe-1"></i>
+                            <!--<strong>{{ site.info_banner.message_attention_word }}</strong>-->
+                        </span>
+                        {{ site.info_banner.message }}
+                        <span class="ps-3">
+                            {%- if site.info_banner.url -%}
+                            <a href="{{ site.info_banner.url }}" target="_blank">
+                                {{ site.info_banner.url_action_word }}
+                            </a>
+                            {%- endif -%}
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-lg-block">
+                {%- if site.bootstrap.social_links -%}
+                <div class="header-info-right">
+                    {%- include social.html -%}
+                </div>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Banner end-->
+
+<div id="js-bootstrap-alert" class="alert alert-dark alert-dismissible fixed-bottom d-sm-block d-md-block d-lg-none m-2" role="alert">
+    <span class="pe-1"><i class="bi bi-megaphone-fill pe-1"></i></span> {{ site.info_banner.message }} <span class="ps-1">
+        {%- if site.info_banner.url -%}
+        <a class="alert-link" href="{{ site.info_banner.url }}" target="_blank">
+            {{ site.info_banner.url_action_word }}
+        </a>
+        {%- endif -%}
+    </span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0.29297 0.29302C0.480497 0.105549 0.734805 0.000233689 0.99997 0.000233689C1.26513 0.000233689 1.51944 0.105549 1.70697 0.29302L7.99997 6.58602L14.293 0.29302C14.3852 0.19751 14.4956 0.121328 14.6176 0.0689187C14.7396 0.0165097 14.8708 -0.0110765 15.0036 -0.0122303C15.1363 -0.0133841 15.268 0.0119176 15.3909 0.0621985C15.5138 0.112479 15.6255 0.186732 15.7194 0.280625C15.8133 0.374518 15.8875 0.48617 15.9378 0.609066C15.9881 0.731962 16.0134 0.863642 16.0122 0.996421C16.0111 1.1292 15.9835 1.26042 15.9311 1.38242C15.8787 1.50443 15.8025 1.61477 15.707 1.70702L9.41397 8.00002L15.707 14.293C15.8891 14.4816 15.9899 14.7342 15.9876 14.9964C15.9854 15.2586 15.8802 15.5094 15.6948 15.6948C15.5094 15.8802 15.2586 15.9854 14.9964 15.9877C14.7342 15.99 14.4816 15.8892 14.293 15.707L7.99997 9.41402L1.70697 15.707C1.51837 15.8892 1.26577 15.99 1.00357 15.9877C0.741372 15.9854 0.490559 15.8802 0.305151 15.6948C0.119743 15.5094 0.0145739 15.2586 0.0122955 14.9964C0.0100171 14.7342 0.110812 14.4816 0.29297 14.293L6.58597 8.00002L0.29297 1.70702C0.105499 1.51949 0.000183105 1.26518 0.000183105 1.00002C0.000183105 0.734856 0.105499 0.480548 0.29297 0.29302Z"
+            fill="white" />
+    </svg>
+</button>
+</div>

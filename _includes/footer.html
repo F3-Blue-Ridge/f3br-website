@@ -1,0 +1,114 @@
+<!-- footer -->
+<footer class="footer footer-3">
+  <div class="footer-top pt-20 pb-lg-20 pb-100">
+    <div class="container">
+      <div class="row gx-0 pt-45 ">
+
+        <div class="col-lg-4 col-sm-6 text-center text-sm-start ms-0 ">
+          <div class="footer-widget wow fadeInLeft mb-30 text-center">
+            <img src="{{ site.baseurl }}/assets/img/logo/f3-logo-white.png" alt="Official F3 Logo">
+            <div class="footer-text mt-4 mb-20">
+              <p>"Leave no man behind, but leave no man where you found him."</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-sm-6 text-center text-sm-start ms-lg-5 ">
+          <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="f-widget-title">
+              <h5>New Here?</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li><a href="#"> Getting Started </a></li>
+                <li><a href="#"> Top 10 tips for new guys</a></li>
+                <li><a href="#"> What is F3 video</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="f-widget-title">
+              <h5>F3 Nation</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li><a href="#"> F3 Nation Official</a></li>
+                <li><a href="#"> Gear &amp; Stuff</a></li>
+                <li><a href="#"> F3 Gateway Podcast</a></li>
+                <li><a href="#"> Growruck</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2  col-sm-6 text-center text-sm-start ms-lg-5">
+          <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="f-widget-title">
+              <h5>For Pax</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li><a href="#"> Backblasts</a></li>
+                <li><a href="#"> Focus on the Form</a></li>
+                <li><a href="#"> Safety Steps</a></li>
+                <li><a href="#"> AO Stats</a></li>
+                <li><a href="#"> QSource</a></li>
+                <li><a href="#"> Lexicon (the Lingo)</a></li>
+                <li><a href="#"> Exicon (Exercises)</a></li>
+                <li><a href="#"> Leadership Guide</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-2 col-sm-6 text-center text-sm-start me-0 ms-lg-5">
+          <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="f-widget-title">
+              <h5>Workout Locations</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                {% for locations in site.locations %}
+                  <li>
+                    <a href="{{ locations.url }}">
+                      {{ locations.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright area -->
+  <div class="copyright pt-25 pb-25">
+    <div class="container">
+      <div class="row align-items-center">
+        {{/*  <div class="col-lg-3 text-center text-lg-start">
+          <a href="/" class="p-0 m-0"><img src="../assets/img/logo/Logo.png" alt="logo"></a>
+        </div>  */}}
+        <div class="col-lg-6 my-3 my-sm-0">
+          <div class="copyright-text">
+            <p>&copy; F3 Blue Ridge 2023. All rights reserved. <br class="d-sm-none"><a class="ms-2" href="https://f3nation.com/disclaimer-and-notice/" target="_blank">Disclaimer &amp; Notice</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-right text-lg-end wow" data-wow-delay="0.3s">
+          <a class="banana" data-fancybox="" href="https://youtu.be/HNd9YvKa6mc" tabindex="0" data-bs-toggle="tooltip" data-bs-title="C'mon, do it...you know you want to click it.">
+            <img src="{{ site.baseurl }}/assets/img/emojii/banana-emojii.png" alt="Banana Emojii of mystery">
+          </a>
+          {{/*  <div class="social-button">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>  */}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer end -->

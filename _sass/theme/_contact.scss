@@ -1,0 +1,145 @@
+/*----------------------------------------*/
+/*   Contact  CSS
+/*----------------------------------------*/
+.contact-form-widget {
+  label {
+    font-size: 16px;
+    color: $theme-title-color;
+    font-family: $Poppins-font;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .form-control {
+    background-color: transparent;
+    height: 55px;
+    color: #9199a1;
+    font-size: 14px;
+    font-family: $Roboto-font;
+    font-weight: 400;
+    border: 1px solid #dcdee0;
+    padding-right: 20px;
+    padding-left: 20px;
+    &::placeholder {
+      color: #9199a1;
+      font-size: 14px;
+      font-family: $Roboto-font;
+      font-weight: 400;
+    }
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: none;
+    }
+  }
+  textarea {
+    &.form-control {
+      height: inherit;
+    }
+  }
+  .policy-text {
+    font-size: 14px;
+    font-family: $Roboto-font;
+    font-weight: 400;
+    color: $theme-text-color;
+    line-height: 22px;
+  }
+}
+/*----------------------------------------*/
+/*   Get In Touch Area CSS
+/*----------------------------------------*/
+.get-touch-area {
+  .get-touch-box {
+    display: flex;
+    align-items: flex-start;
+
+    .icon {
+      margin-right: 8px;
+      img {
+        vertical-align: text-top;
+      }
+      i {
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-family: $Poppins-font;
+      font-weight: 500;
+      color: $theme-title-color;
+      margin-bottom: 8px;
+      line-height: 24px;
+    }
+    span {
+      font-size: 14px;
+      font-family: $Roboto-font;
+      font-weight: 400;
+      color: $theme-text-color;
+      line-height: 22px;
+    }
+  }
+}
+
+.get-touch-area-2 {
+  padding: 128px 0;
+  background: url(../img/home-5/get-touch-bg.png), #0e1520;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: initial;
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  p {
+    font-family: $Roboto-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #eeeeee;
+    margin-bottom: 0;
+  }
+  .consult-num {
+    margin-top: 40px;
+    display: flex;
+    > div {
+      width: 50%;
+    }
+    h1 {
+      font-size: 52px;
+      font-weight: 500;
+      line-height: 60px;
+      color: #d1edf5;
+      margin-bottom: 2px;
+    }
+    p {
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+
+  .touch-form {
+    padding: 60px 48px;
+    background-color: #fff;
+    border-radius: 8px;
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 36px;
+      margin-bottom: 40px;
+      color: #242527;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      background-color: #f2f0ef;
+      border-color: #f2f0ef;
+      height: 56px;
+      line-height: 56px;
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+  }
+}

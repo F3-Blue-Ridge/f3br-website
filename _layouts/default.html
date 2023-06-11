@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include preloader.html -%}
+    {%- include header.html -%}
+
+
+    <main aria-label="Content" id="js-focused-element">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="{{ 'assets/js/jquery-3.6.0.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/preloader.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{'assets/js/jquery.smoothscroll.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.waypoints.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{'assets/js/jquery.counterup.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.nice-select.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/slick.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.fancybox.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/parallax.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/jquery.parallax-scroll.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/nouislider.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/wNumb.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/flatpickr.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/wow.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/js/custom.js' | relative_url }}"></script>
+
+
+  </body>
+
+</html>

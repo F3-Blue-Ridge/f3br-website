@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section class="pt-200 pb-80">
+  <div class="container">
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <div class="py-3">
+        <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="text-muted">
+          {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: date_format }}
+          </time>
+          {%- if page.modified_date -%}
+            ~
+            {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+            <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+              {{ mdate | date: date_format }}
+            </time>
+          {%- endif -%}
+          {%- if page.author -%}
+            • {% for author in page.author %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+          {%- endif -%}</p>
+      </div>
+
+      <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+      <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    </article>
+  </div>
+</section>

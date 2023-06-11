@@ -1,0 +1,285 @@
+---
+layout: default
+---
+
+<!-- Banner start -->
+<section class="banner-area-2 locations-banner pt-150">
+    <div class="container">
+        <div class="row align-items-center pb-150 pt-lg-100">
+            <div class="col-lg-8 mx-auto">
+                <div class="banner-content text-center">
+                    <div class="section-title">
+                        <h1 class="wow fadeInUp">Workout Locations</h1>
+                        <p class="wow fadeInUp">Or as we refer to them, <em>Areas of Operations (AOs)</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner end -->
+
+<!-- BlueRidge AOs start -->
+<section class="bg_white">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-8">
+                <div class="section-title text-start pt-5">
+                    <h2 class="wow fadeInUp">Blue Ridge AOs</h2>
+                    <p class="v2 wow fadeInUp" data-wow-delay="0.3s">We currently operate out of 10 different AOs (Area
+                        of Operations) in the Blue Ridge Area. Each AO gets a creative name by the PAX at the time it is
+                        launched — you’ll get to know those names well!</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <nav class="pt-5">
+                    <div class="nav nav-tabs f3-tabs mb-3 flex-column flex-sm-row" id="nav-tab" role="tablist">
+                        <button class="nav-link active me-xs-0 me-sm-2" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Locations</button>
+                        <button class="nav-link me-xs-0 me-sm-2" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Daily Workout Schedule</button>
+                        <button class="nav-link me-xs-0 me-sm-2" id="nav-contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Interactive Map</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <!-- Blog Posts start-->
+                        <section class="pt-4 pb-80">
+                            <div class="container px-0">
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <div class="blog-post-widget">
+                                            <div class="row gy-4 ">
+                                                {% for locations in site.locations %}
+                                                <div class="col-sm-6 col-lg-4 hover-overlay">
+
+                                                    <div class="blog-widget-2 wow fadeInUp h-100" data-wow-delay="0.1s">
+                                                        <a href="{{ locations.url }}">
+                                                            <div class="blog-img">
+                                                                {% if locations.thumbnail %}
+                                                                <img src="{{ locations.thumbnail }}"
+                                                                    alt="location thumbnail image">
+                                                                {% else %}
+                                                                <img src="{{ site.baseurl }}/assets/img/locations/default-location-thumbnail.webp"
+                                                                    alt="generic location thumbnail image">
+                                                                {% endif %}
+
+                                                                {% if locations.thumbnail-back %}
+                                                                <img src="{{ locations.thumbnail-back }}"
+                                                                    class="img-back"
+                                                                    alt="location thumbnail back image"></img>
+                                                                {% else %}
+                                                                <img src="{{ site.baseurl }}/assets/img/locations/default-location-thumbnail-back.webp" class="img-back" alt="generic location thumbnail back image"></img>
+                                                                {% endif %}
+
+                                                                {% if locations.tag %}
+                                                                <div class="catagory gray-bg">{{ locations.tag }}</div>
+                                                                {% else %}
+                                                                <div class="catagory gray-bg">Bootcamp</div>
+                                                                {% endif %}
+                                                            </div>
+                                                        </a>
+                                                        <div class="blog-content">
+                                                            <a href="{{ locations.url }}">
+                                                                <h4>{{ locations.title }}</h4>
+                                                            </a>
+                                                            <a href="{{ locations.google-maps-url }}"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-title="Open in Google Maps" target="_blank">
+                                                                <p>{{ locations.address-name }} <i
+                                                                        class="bi bi-geo-fill"></i></p>
+                                                            </a>
+                                                            <p>{{ locations.address }}</p>
+                                                            <p class="pt-3"><strong>Site Q: </strong>{{ locations.siteQ
+                                                                }}</p>
+                                                        </div>
+                                                        <div class="card-footer post-info">
+                                                            <span class="badge">{{ locations.weekdays }}</span>
+                                                            <span class="badge">{{ locations.weekends }}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade pt-20 pb-80" id="nav-profile" role="tabpanel"
+                        aria-labelledby="nav-profile-tab">
+                        <table class="table table-responsive caption-top">
+                            <h3>Monday</h3>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-responsive caption-top">
+                            <h3 class="pt-20">Tuesday</h3>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-responsive caption-top">
+                            <h3 class="pt-20">Wednesday</h3>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-responsive caption-top">
+                            <h3 class="pt-20">Thursday</h3>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-responsive caption-top">
+                            <h3 class="pt-20">Friday</h3>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade pt-4 pb-80" id="nav-contact" role="tabpanel"
+                        aria-labelledby="nav-contact-tab">
+                        <iframe src="https://map.f3nation.com/?lat=39.105499578&amp;lon=-77.554664448&amp;zoom=10"
+                            width="100%" height="600" frameborder="0"></iframe>
+                        <p class="py-2">View the full screen map <a
+                                href="https://map.f3nation.com/?lat=39.105499578&amp;lon=-77.554664448&amp;zoom=10"
+                                class="text-primary" target="_blank">here.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
