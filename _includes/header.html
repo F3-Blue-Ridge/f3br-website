@@ -12,7 +12,7 @@
     {%- assign page_path_no_extension = page.path | remove: '.markdown' | prepend: '/' -%}
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/index">
           <img src="{% if page.nav-dark-mode == true %} {{ site.baseurl }}/assets/img/logo/f3-blueridge-dark.svg {% else %} {{ site.baseurl }}/assets/img/logo/f3-blueridge-light.svg {% endif %}" alt="logo">
         </a>
         <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"

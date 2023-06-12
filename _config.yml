@@ -61,6 +61,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+
+github:
+  source:
+    branch: main
+
 # Collection sets
 collections:
   locations:
