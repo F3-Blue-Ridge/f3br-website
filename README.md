@@ -1,7 +1,6 @@
 # F3BR Main Website
 
-## What is it?
-The main public-facing website for the F3 Blue Ridge region.
+The public-facing website for the F3 Blue Ridge region.
 
 Based on the Jekyll Bootstrap 5 Theme [repo](https://github.com/jonaharagon/jekyll-bootstrap-theme )   (see there for additional info on usage).
 
