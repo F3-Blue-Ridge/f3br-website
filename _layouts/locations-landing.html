@@ -61,7 +61,7 @@ layout: default
                                                         <a href="{{ locations.url }}">
                                                             <div class="blog-img">
                                                                 {% if locations.thumbnail %}
-                                                                <img src="{{ locations.thumbnail }}"
+                                                                <img src="{{ locations.thumbnail | prepend: site.baseurl }}"
                                                                     alt="location thumbnail image">
                                                                 {% else %}
                                                                 <img src="{{ site.baseurl }}/assets/img/locations/default-location-thumbnail.webp"
@@ -69,7 +69,7 @@ layout: default
                                                                 {% endif %}
 
                                                                 {% if locations.thumbnail-back %}
-                                                                <img src="{{ locations.thumbnail-back }}"
+                                                                <img src="{{ locations.thumbnail-back | prepend: site.baseurl }}"
                                                                     class="img-back"
                                                                     alt="location thumbnail back image"></img>
                                                                 {% else %}
