@@ -56,7 +56,7 @@ bootstrap:
 
 
 # Build settings
-theme: jekyll-bootstrap-theme
+# theme: jekyll-bootstrap-theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
