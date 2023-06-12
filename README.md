@@ -1,6 +1,7 @@
 
 <h1 align="center">
-    <img src="assets/img/logo/f3-blueridge-dark.svg">
+    <img src="assets/img/logo/f3-blueridge-dark.svg#gh-dark-mode-only">
+    <img src="assets/img/logo/f3-blueridge-light.svg#gh-light-mode-only">
 </h1>
 <p align="center">
   <i align="center">The public-facing website for the F3 Blue Ridge region.</i>
