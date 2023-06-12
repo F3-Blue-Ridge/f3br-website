@@ -2,7 +2,7 @@
 title: Country Roads
 layout: location
 nav-dark-mode: true
-thumbnail: ../assets/img/locations/location-thumbnail-kodiak.webp
+thumbnail: /assets/img/locations/location-thumbnail-kodiak.webp
 tag: Bootcamp
 address-name: Shenandoah University
 address: 1460 University Dr Winchester, VA 22601

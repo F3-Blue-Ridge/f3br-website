@@ -58,7 +58,7 @@ layout: default
                                                 <div class="col-sm-6 col-lg-4 hover-overlay">
 
                                                     <div class="blog-widget-2 wow fadeInUp h-100" data-wow-delay="0.1s">
-                                                        <a href="{{ locations.url }}">
+                                                        <a href="{{ locations.url | prepend: site.baseurl }}">
                                                             <div class="blog-img">
                                                                 {% if locations.thumbnail %}
                                                                 <img src="{{ locations.thumbnail | prepend: site.baseurl }}"
@@ -84,7 +84,7 @@ layout: default
                                                             </div>
                                                         </a>
                                                         <div class="blog-content">
-                                                            <a href="{{ locations.url }}">
+                                                            <a href="{{ locations.url | prepend: site.baseurl }}">
                                                                 <h4>{{ locations.title }}</h4>
                                                             </a>
                                                             <a href="{{ locations.google-maps-url }}"
