@@ -1,8 +1,12 @@
-# F3BR Main Website
+# F3BR Website
+
+[![Deploy Jekyll to Pages](https://github.com/F3-Blue-Ridge/f3br-website/actions/workflows/jekyll.yml/badge.svg)](https://github.com/F3-Blue-Ridge/f3br-website/actions/workflows/jekyll.yml)
+</p>
 
 The public-facing website for the F3 Blue Ridge region.
 
 Based on the Jekyll Bootstrap 5 Theme [repo](https://github.com/jonaharagon/jekyll-bootstrap-theme )   (see there for additional info on usage).
+
 
 
 ## Local development
