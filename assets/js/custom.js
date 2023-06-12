@@ -169,12 +169,11 @@
   if ($(".testimonial-slider").length) {
     $(".testimonial-slider").slick({
       dots: false,
-      rtl: true,
       arrows: true,
       prevArrow:
-        '<button type="button" class="slick-prev"><i class="arrow_carrot-right"></i></button>',
+        '<button type="button" class="slick-prev"><i class="arrow_carrot-left"></i></button>',
       nextArrow:
-        '<button type="button" class="slick-next"><i class="arrow_carrot-left"></i></button>',
+        '<button type="button" class="slick-next"><i class="arrow_carrot-right"></i></button>',
       slidesToShow: 1,
       centerMode: true,
       autoplay: true,
@@ -198,7 +197,6 @@
     $(".testimonial-slider-2").slick({
       dots: false,
       arrows: true,
-      rtl: true,
       prevArrow:
         '<button type="button" class="slick-prev"><i class="arrow_left"></i></button>',
       nextArrow:
@@ -230,7 +228,6 @@
   if ($(".testimonial-slider-3").length) {
     $(".testimonial-slider-3").slick({
       dots: false,
-      rtl: true,
       asNavFor: ".testimonial-slider-2",
       arrows: false,
       slidesToShow: 1,
@@ -248,7 +245,6 @@
       slidesToShow: 3,
       autoplay: true,
       infinite: true,
-      rtl: true,
       autoplaySpeed: 5000,
       slidesToScroll: 3,
       responsive: [
@@ -265,7 +261,6 @@
   if ($(".statistics-slider").length) {
     $(".statistics-slider").slick({
       dots: true,
-      rtl: true,
       arrows: false,
       slidesToShow: 1,
       autoplay: true,
@@ -277,8 +272,72 @@
   if ($(".client-slider").length) {
     $(".client-slider").slick({
       dots: true,
-      rtl: true,
       arrows: false,
+      centerMode: false,
+      slidesToShow: 3,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 5000,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  /* new version */
+  if ($(".client-slider-2").length) {
+    $(".client-slider-2").slick({
+      dots: true,
+      arrows: true,
+      prevArrow:
+        '<button type="button" class="slick-prev"><i class="arrow_left"></i></button>',
+      nextArrow:
+        '<button type="button" class="slick-next"><i class="arrow_right"></i></button>',
+      centerMode: false,
+      slidesToShow: 3,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 5000,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  if ($(".loan-slider").length) {
+    $(".loan-slider").slick({
+      dots: true,
+      arrows: true,
+      prevArrow:
+        '<button type="button" class="slick-prev"><i class="arrow_left"></i></button>',
+      nextArrow:
+        '<button type="button" class="slick-next"><i class="arrow_right"></i></button>',
       centerMode: false,
       slidesToShow: 3,
       autoplay: true,
@@ -306,7 +365,6 @@
   if ($(".news-slider").length) {
     $(".news-slider").slick({
       dots: true,
-      rtl: true,
       arrows: false,
       centerMode: false,
       slidesToShow: 3,
@@ -353,27 +411,40 @@
   var SelectedAmount,
     selectedTime = {},
     RateOfInterestTime,
-    RateOfInterestAmount;
+    RateOfInterestAmount,
+    SelectedRoi;
 
   if (typeof wNumb !== "undefined") {
     var AmountFormat = wNumb({
       decimals: 0,
       thousand: ",",
-      prefix: "$ ",
+      prefix: "$",
+    });
+    var AmountFormatNoMerge = wNumb({
+      decimals: 0,
+      thousand: ",",
     });
 
     var TimeFormatMonths = wNumb({
-      prefix: " months",
+      suffix: " months",
     });
     var TimeFormatYears = wNumb({
-      prefix: " months",
+      suffix: " years",
+    });
+    var TimeFormatWeeks = wNumb({
+      suffix: " weeks",
+    });
+    var RoiFormat = wNumb({
+      suffix: " %",
     });
   }
 
   //Slider Elements
   var mySlider = document.getElementById("RangeSlider");
   var mySliderMonth = document.getElementById("MonthRangeSlider");
+  var mySliderWeekly = document.getElementById("WeekRangeSlider");
   var mySliderYear = document.getElementById("YearRangeSlider");
+  var mySliderROI = document.getElementById("RoiRangeSlider");
   //-----home page 1
   var SliderAmount = document.getElementById("SliderAmount");
   var SliderPeriod = document.getElementById("SliderPeriod");
@@ -397,7 +468,6 @@
   if (mySlider && mySliderMonth && mySliderYear) {
     noUiSlider.create(mySlider, {
       start: [15000],
-      direction: "rtl",
       connect: "lower",
       range: {
         min: 5000,
@@ -405,8 +475,6 @@
       },
       format: wNumb({
         decimals: 0,
-        thousand: ",",
-        prefix: "$ ",
       }),
       pips: {
         mode: "values",
@@ -426,7 +494,6 @@
     });
     noUiSlider.create(mySliderMonth, {
       start: [18],
-      direction: "rtl",
       connect: "lower",
       range: {
         min: 12,
@@ -434,7 +501,6 @@
       },
       format: wNumb({
         decimals: 0,
-        suffix: " Months",
       }),
       pips: {
         mode: "values",
@@ -448,8 +514,7 @@
       },
     });
     noUiSlider.create(mySliderYear, {
-      start: [2],
-      direction: "rtl",
+      start: [5],
       connect: "lower",
       range: {
         min: 2,
@@ -457,7 +522,6 @@
       },
       format: wNumb({
         decimals: 0,
-        suffix: " Years",
       }),
       pips: {
         mode: "values",
@@ -469,6 +533,17 @@
           decimals: 0,
         }),
       },
+    });
+    noUiSlider.create(mySliderWeekly, {
+      start: [5],
+      connect: "lower",
+      range: {
+        min: 2,
+        max: 40,
+      },
+      format: wNumb({
+        decimals: 0,
+      }),
     });
     //Slider Pips
     var pips = mySlider.querySelectorAll(".noUi-value");
@@ -483,7 +558,6 @@
     SetPipsOnSlider(pipsMonth, mySliderMonth);
     SetPipsOnSlider(pipsYear, mySliderYear);
     mySlider.noUiSlider.on("update", function (values, handle) {
-      inputFormat.value = values[handle];
       SelectedAmount = AmountFormat.from(values[handle]);
       CalculateAmount();
     });
@@ -491,52 +565,44 @@
     inputFormat.addEventListener("change", function () {
       mySlider.noUiSlider.set(this.value);
     });
+    mySliderMonth.noUiSlider.on("update", function (values, handle) {
+      selectedTime = {
+        type: "month",
+        value: TimeFormatMonths.from(values[handle]),
+      };
 
-    if ($("#monthTab.active").length > 0) {
-      mySliderMonth.noUiSlider.on("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
-        selectedTime = {
-          type: "month",
-          value: TimeFormatMonths.from(values[handle]),
-        };
+      CalculateAmount();
+    });
 
-        CalculateAmount();
-      });
+    mySliderWeekly.noUiSlider.on("update", function (values, handle) {
+      selectedTime = {
+        type: "week",
+        value: TimeFormatWeeks.from(values[handle]),
+      };
 
-      inputMonthFormat.addEventListener("change", function () {
-        mySliderMonth.noUiSlider.set(this.value);
-      });
-    } else if ($("#yearTab.active").length > 0) {
-      mySliderYear.noUiSlider.on("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
-
-        selectedTime = {
-          type: "year",
-          value: TimeFormatYears.from(values[handle]),
-        };
-        CalculateAmount();
-      });
-    }
-
+      CalculateAmount();
+    });
+    mySliderYear.noUiSlider.on("update", function (values, handle) {
+      selectedTime = {
+        type: "year",
+        value: TimeFormatYears.from(values[handle]),
+      };
+      CalculateAmount();
+    });
     inputMonthFormat.addEventListener("change", function () {
       if ($("#monthTab.active").length > 0) {
         mySliderMonth.noUiSlider.set(this.value);
       } else if ($("#yearTab.active").length > 0) {
         mySliderYear.noUiSlider.set(this.value);
+      } else if ($("#weekTab.active").length > 0) {
+        mySliderWeekly.noUiSlider.set(this.value);
+      } else {
+        mySliderMonth.noUiSlider.set(this.value);
       }
     });
 
-    $("#yearTab").on("click", function () {
-      mySliderMonth.noUiSlider.off("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
-        selectedTime = {
-          type: "month",
-          value: TimeFormatMonths.from(values[handle]),
-        };
-        CalculateAmount();
-      });
+    $("#yearTab-tab").on("click", function () {
       mySliderYear.noUiSlider.on("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
         selectedTime = {
           type: "year",
           value: TimeFormatYears.from(values[handle]),
@@ -544,30 +610,28 @@
         CalculateAmount();
       });
     });
-    $("#monthTab").on("click", function () {
-      mySliderYear.noUiSlider.off("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
-        selectedTime = {
-          type: "year",
-          value: TimeFormatYears.from(values[handle]),
-        };
-        CalculateAmount();
-      });
+    $("#monthTab-tab").on("click", function () {
       mySliderMonth.noUiSlider.on("update", function (values, handle) {
-        inputMonthFormat.value = values[handle];
         selectedTime = {
           type: "month",
           value: TimeFormatMonths.from(values[handle]),
+        };
+        CalculateAmount();
+      });
+    });
+    $("#weekTab-tab").on("click", function () {
+      mySliderWeekly.noUiSlider.on("update", function (values, handle) {
+        selectedTime = {
+          type: "week",
+          value: TimeFormatWeeks.from(values[handle]),
         };
         CalculateAmount();
       });
     });
   }
-
   if (SliderAmount && SliderPeriod) {
     noUiSlider.create(SliderAmount, {
       start: [100000],
-      direction: 'rtl',
       connect: "lower",
       range: {
         min: 5000,
@@ -581,7 +645,6 @@
     });
     noUiSlider.create(SliderPeriod, {
       start: [3],
-      direction: 'rtl',
       connect: "lower",
       range: {
         min: 1,
@@ -608,6 +671,32 @@
     });
     SliderPeriodFormat.addEventListener("change", function () {
       SliderPeriod.noUiSlider.set(this.value);
+    });
+  }
+
+  if (mySliderROI) {
+    noUiSlider.create(mySliderROI, {
+      start: [8],
+      connect: "lower",
+      range: {
+        min: 5,
+        max: 30,
+      },
+      format: wNumb({
+        decimals: 0,
+      }),
+    });
+
+    var inputRoiFormat = document.getElementById("SetRoiRange");
+
+    mySliderROI.noUiSlider.on("update", function (values, handle) {
+      inputRoiFormat.value = values[handle];
+      SelectedRoi = RoiFormat.from(values[handle]);
+      CalculateAmount();
+    });
+
+    inputRoiFormat.addEventListener("change", function () {
+      mySliderROI.noUiSlider.set(this.value);
     });
   }
 
@@ -698,32 +787,73 @@
       }
     }
 
-    var TotalRateOfInterest = (RateOfInterestAmount + RateOfInterestTime) / 100;
+    var TotalRateOfInterest = SelectedRoi
+      ? SelectedRoi / 100
+      : (RateOfInterestAmount + RateOfInterestTime) / 100;
+
     var TotalInterest = SelectedAmount * TotalRateOfInterest;
     var InterestAndPrincipal = TotalInterest + SelectedAmount;
 
-    $("#TotalAmount").text(AmountFormat.to(InterestAndPrincipal) + "*");
+    if ($(inputFormat).hasClass("noTextMerge")) {
+      inputFormat.value = AmountFormatNoMerge.to(SelectedAmount);
+    } else {
+      inputFormat.value = AmountFormat.to(SelectedAmount);
+    }
+
+    $(".LoanTotalAmount").text(AmountFormat.to(InterestAndPrincipal) + "*");
+
+    if ($(inputMonthFormat).hasClass("noTextMerge")) {
+      inputMonthFormat.value = selectedTime.value;
+    } else {
+      inputMonthFormat.value = selectedTime.value + " " + selectedTime.type;
+    }
+
+    if ($(".LoanTotalDuration").length) {
+      $(".LoanTotalDuration").text(
+        selectedTime.value + " " + selectedTime.type
+      );
+      if (selectedTime.type) {
+        $(".loanTermIndicator").text(selectedTime.type.charAt(0));
+      }
+    }
+
     $("#emiAmount").text(
       AmountFormat.to(InterestAndPrincipal / selectedTime.value) + "*"
     );
     $("#InterestPayable").text(AmountFormat.to(TotalInterest) + "*");
-    $("#InterestAmount").text((TotalRateOfInterest * 100).toFixed(2) + " %");
+    $("#InterestAmount").text((TotalRateOfInterest * 100).toFixed(2));
 
-    var percent, graphRadius, circumference, strokeDashOffset;
-    var GraphEl = $("#LoanGraph");
-    percent = (100 * TotalInterest) / InterestAndPrincipal;
-    graphRadius = GraphEl.find($("circle.complete")).attr("r");
-    circumference = 2 * Math.PI * graphRadius;
-    strokeDashOffset = circumference - (percent * circumference) / 100;
-    GraphEl.find($("circle.complete"))
-      .css({ "stroke-dashoffset": "0", opacity: "0.1" })
-      .animate({ "stroke-dashoffset": strokeDashOffset, opacity: "1" }, 1250);
+    var loanGraphEl = $("#loan_graph_circle");
+    var percent = (100 * TotalInterest) / InterestAndPrincipal;
+    loanGraphEl
+      .find($(".left-side"))
+      .css({ transform: "rotate(" + percent * 3.6 + "deg)" });
+
+    if (percent <= 50) {
+      loanGraphEl.find($(".right-side")).css({ display: "none" });
+    } else if (percent > 50) {
+      loanGraphEl.find($(".right-side")).css({ transform: "rotate(180deg)" });
+      loanGraphEl.find($(".pie")).css({ clip: "rect(auto, auto, auto, auto)" });
+    }
 
     if ($("#monthTab").hasClass("active")) {
       $(".active_bar").addClass("left");
     } else {
       $(".active_bar").removeClass("left");
     }
+  }
+
+  if ($("#loanStartDate").length) {
+    $("#loanStartDate").flatpickr({
+      altInput: true,
+      altFormat: "F j, Y",
+      dateFormat: "Y-m-d",
+    });
+    $("#loanEndDate").flatpickr({
+      altInput: true,
+      altFormat: "F j, Y",
+      dateFormat: "Y-m-d",
+    });
   }
   // End of Calculator
 })(jQuery);
