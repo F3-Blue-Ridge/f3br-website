@@ -38,7 +38,7 @@
             {% if page.show-in-nav %} <!-- Check if the page should be shown in the navigation -->
             {% if page.submenu %} <!-- Check if the page has a submenu -->
             <li class="nav-item dropdown submenu">
-              <a class="nav-link dropdown-toggle {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | relative_url }}" role="button"
+              <a class="nav-link dropdown-toggle {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | prepend: site.baseurl }}" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{ page.title }}
               </a>
@@ -49,7 +49,7 @@
                 {% for submenuLevel1 in sortedSubmenu %}
                 {% if submenuLevel1.flyout %} <!-- Check if the submenu item has a flyout submenu -->
                 <li class="nav-item dropdown flyout">
-                  <a class="nav-link dropdown-toggle {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url | relative_url }}" role="button"
+                  <a class="nav-link dropdown-toggle {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url | prepend: site.baseurl }}" role="button"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ submenuLevel1.url }}
                   </a>
@@ -60,7 +60,7 @@
                     {% assign sortedSubmenuLevel2 = submenuLevel1.flyout | sort: "menu-order" %}
                     {% for submenuLevel2 in sortedSubmenuLevel2 %}
                     <li class="nav-item">
-                      <a class="nav-link {% if submenuLevel2.url == page.permalink and submenuLevel2.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel2.url }}">{{ submenuLevel2.title }}</a>
+                      <a class="nav-link {% if submenuLevel2.url == page.permalink and submenuLevel2.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel2.url | prepend: site.baseurl }}">{{ submenuLevel2.title }}</a>
                     </li>
                     {% endfor %}
                     {% endif %}
@@ -68,7 +68,7 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url }}">{{ submenuLevel1.title }}</a>
+                  <a class="nav-link {% if submenuLevel1.url == page.permalink and submenuLevel1.url == page_path_no_extension %}active{% endif %}" href="{{ submenuLevel1.url | prepend: site.baseurl }}">{{ submenuLevel1.title }}</a>
                 </li>
                 {% endif %}
                 {% endfor %}
@@ -77,13 +77,13 @@
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+              <a class="nav-link {% if page.url == page.permalink and page.url == page_path_no_extension %}active{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
             {% endif %}
             {% endif %}
             {% endfor %}
           </ul>
-          <a class="theme-btn" href="/get-started">I’M NEW HERE</a>
+          <a class="theme-btn" href="{{ site.baseurl }}/get-started">I’M NEW HERE</a>
         </div>
       </div>
     </nav>
