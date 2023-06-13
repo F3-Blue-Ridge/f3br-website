@@ -53,7 +53,7 @@
                 <li><a href="#"> Safety Steps</a></li>
                 <li><a href="#"> AO Stats</a></li>
                 <li><a href="#"> QSource</a></li>
-                <li><a href="#"> Lexicon (the Lingo)</a></li>
+                <li><a href="https://f3nation.com/lexicon/#:~:text=The%20F3%20Lexicon%20is%20intended,leader%20of%20a%20given%20workout)." target="_blank"> Lexicon (the Lingo)</a></li>
                 <li><a href="#"> Exicon (Exercises)</a></li>
                 <li><a href="#"> Leadership Guide</a></li>
               </ul>
@@ -70,7 +70,7 @@
               <ul>
                 {% for locations in site.locations %}
                   <li>
-                    <a href="{{ locations.url }}">
+                    <a href="{{ locations.url | prepend: site.baseurl }}">
                       {{ locations.title }}
                     </a>
                   </li>

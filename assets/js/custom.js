@@ -727,3 +727,13 @@
   }
   // End of Calculator
 })(jQuery);
+
+// Initialize BS Tooltips
+var tooltipTriggerList = [].slice.call (
+  document.querySelectorAll ('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map (function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip (tooltipTriggerEl, {
+    delay: {show: 800, hide: 100}, // Adds timing for showing and hiding of tooltips
+  });
+});

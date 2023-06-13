@@ -3,7 +3,7 @@ title: Appleseed
 layout: location
 nav-dark-mode: true
 thumbnail: /assets/img/locations/location-thumbnail-kodiak.webp
-thumbnail-back: ../assets/img/locations/location-thumbnail-kodiak-back.webp
+thumbnail-back: /assets/img/locations/location-thumbnail-kodiak-back.webp
 tag: Running
 address-name: Shenandoah University
 address: 1460 University Dr Winchester, VA 22601
