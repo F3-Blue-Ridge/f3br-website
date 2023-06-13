@@ -737,3 +737,44 @@ var tooltipList = tooltipTriggerList.map (function (tooltipTriggerEl) {
     delay: {show: 800, hide: 100}, // Adds timing for showing and hiding of tooltips
   });
 });
+
+// Global sessionStorage BS Tooltips
+const hideBootstrapAlert = (() => {
+  'use strict';
+
+  // For testing: want to show the alert after you've clicked the button?
+  // Uncomment 👇, refresh, then re-comment:
+  // sessionStorage.removeItem ('hideAlertKey');
+
+  // Variables:
+  const alertNode = document.querySelector ('#js-bootstrap-alert');
+  const focusedElement = document.querySelector ('#js-focused-element');
+
+  // Variable checks:
+  if (!alertNode) return;
+  if (!focusedElement) return;
+
+  // Initialize alert to be used with the Bootstrap JS API:
+  const alert = new bootstrap.Alert (alertNode);
+
+  // If someone has already clicked to hide the alert, hide it on page load:
+  const hideAlert = sessionStorage.getItem ('hideAlertKey');
+  if (hideAlert === 'true') {
+    return alert.close ();
+  }
+
+  // Add `fade show` classes to animate the component on close when the alert is showing:
+  alertNode.classList.add ('fade', 'show');
+
+  // Now that we know it's showing, set session storage state upon click/close & move focus:
+  alertNode.addEventListener (
+    'closed.bs.alert',
+    () => {
+      sessionStorage.setItem ('hideAlertKey', 'true'); // Set alert state
+      focusedElement.focus ();
+    },
+    {
+      once: true,
+    }
+  );
+}) ();
