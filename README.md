@@ -37,7 +37,7 @@ cd f3br-website
 ### 3. Install dependencies locally
 
 ```
-yarn run assets:clean && yarn upgrade && yarn run assets:install
+bundle install
 ```
 
 ### 4. Run
