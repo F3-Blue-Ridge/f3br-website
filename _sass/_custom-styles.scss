@@ -84,3 +84,15 @@ iframe {
     top: -70px;
     left: 15px;
 }
+
+.breadcrumb-item a:hover{
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255,255,255, 0.4);
+}
+
+.breadcrumb {
+  font-size: 18px;
+}
