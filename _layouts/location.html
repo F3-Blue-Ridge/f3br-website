@@ -5,9 +5,9 @@ layout: default
 {% for location in site.locations %}
 {% if location.url == page.url %}
 <!-- Banner start -->
-<section class="location pt-200">
+<section class="location pt-150 pt-lg-200">
     <div class="container">
-        <div class="row align-items-center pb-200">
+        <div class="row align-items-center">
             <div class="col-lg-8 mx-auto">
                 <div class="banner-content text-center">
                     <div class="section-title">
@@ -23,24 +23,43 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="location-images container-fluid overflow-hidden position-relative">
         <div class="row">
-            <div class="col-12 position-relative">
-                <div class="image-strip floated-widget p-3">
-                    <div class="d-flex justify-content-between">
-                        <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/img/statistics/img-1.png" alt="img">
-                        <img class="img-fluid w-100 px-md-3 px-sm-0 pe-md-0 pe-lg-3 d-md-block d-sm-none d-none" src="{{ site.baseurl }}/assets/img/statistics/img-1.png" alt="img">
-                        <img class="img-fluid w-100 d-lg-block d-sm-none d-none" src="{{ site.baseurl }}/assets/img/statistics/img-1.png" alt="img">
-
+            <div class="col-12">
+                    <div class="location-slider">
+                        {% for item in page.slider-images %}
+                        <div class="mx-2" data-wow-delay="0.9s">
+                            <img class="w-sm-auto w-100" src="{{ item.image1 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="1.1s">
+                            <img class="w-sm-auto w-100" src="{{ item.image2 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="1.3s">
+                            <img class="w-sm-auto w-100" src="{{ item.image3 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="1.5s">
+                            <img class="w-sm-auto w-100" src="{{ item.image4 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="1.7s">
+                            <img class="w-sm-auto w-100" src="{{ item.image5 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="1.9s">
+                            <img class="w-sm-auto w-100" src="{{ item.image6 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="2.1s">
+                            <img class="w-sm-auto w-100" src="{{ item.image7 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        <div class="mx-2" data-wow-delay="2.3s">
+                            <img class="w-sm-auto w-100" src="{{ item.image8 | prepend: site.baseurl }}" alt="news image">
+                        </div>
+                        {% endfor %}
                     </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Banner end -->
-
-<section class="job-application-area pt-200 mt-80 pb-120 bg_white">
+<section class="job-application-area pt-10 pt-lg-40 mt-40 mt-lg-80 pb-120 bg_white">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 order-2 order-lg-1">
@@ -50,79 +69,34 @@ layout: default
                         <p>{{ location.content | markdownify }}</p>
                     </div>
                     <div class="single-description-para">
-                        <h3>Job Responsibilities</h3>
-                        <ul>
-                            <li>Achieve individual target on daily, weekly & monthly basis set by respective
-                                Department</li>
-                            <li>Ensure smooth business operation at Agent Banking Centre maintaining compliance
-                            </li>
-                            <li>Follow up day to day activities of Agent Banking Centre and being in touch with
-                                Head office regarding any instruction/circular/guideline</li>
-                            <li>Rapport build up with local potential customers to promote financial literacy
-                            </li>
-                            <li>Ensure proper service provided to each and every customers as par bank policy
-                            </li>
-                            <li>Collect and complete applications with all required documents from good and
-                                prospective Agent</li>
-                        </ul>
-                    </div>
-                    <div class="single-description-para">
                         <h3>News &amp; Events</h3>
                         <ul>
-                            <li>Bachelor's degree in Public Relations, Journalism or related field.</li>
+                            <li><a href="" class="fancy-link">Some AO-tagged News or Event <i class="arrow_right"></i></a></li>
+                            <li><a href="" class="fancy-link">Another AO-tagged News or Event <i class="arrow_right"></i></a></li>
+                            <li><a href="" class="fancy-link">Yet again, AO-tagged News or Event <i class="arrow_right"></i></a></li>
+                            <li><a href="" class="fancy-link">AO-tagged News or Event <i class="arrow_right"></i></a></li>
+                            <li><a href="" class="fancy-link">Some AO-tagged News or Event with a silly long title that has no business being this long <i class="arrow_right"></i></a></li>
                         </ul>
                     </div>
                     <div class="single-description-para">
                         <h3>Location Map</h3>
-                        <ul>
-                            <li>At least 1 year(s)</li>
-                            <li>Freshers are also encouraged to apply.</li>
-                        </ul>
+                        <div class="pb-20">
+                        <iframe src="{{ location.f3-map }}" width="100%" height="400"
+                                frameborder="0"></iframe>
+                            <p class="py-2">View the full screen map <a
+                                    href="{{ location.f3-map }}" class="text-primary"
+                                    target="_blank">here.</a></p>
+                        </div>
                     </div>
                     <div class="single-description-para">
-                        <h3>Additional Requirements</h3>
+                        <h3>AO Goal Setting</h3>
                         <ul>
-                            <li>Age at most 28 years</li>
-                            <li>Both males and females are allowed to apply</li>
-                            <li>The applicants should have experience in Banks or Financial Institutions</li>
-                        </ul>
-                    </div>
-                    <div class="single-description-para pb-2">
-                        <h3>Compensation & Other Benefits</h3>
-                        <ul>
-                            <li>Festival Bonus: 2</li>
-                            <li>As per policy of the Bank</li>
+                            <li>some goal 1</li>
+                            <li>another goal</li>
+                            <li>you guessed it! another goal here too</li>
                         </ul>
                     </div>
 
-                    <div class="single-description-para border-top pt-30 ">
-                        <h3>Application Process<span>*</span></h3>
-                        <p class="text_body_color">Applications must be submitted through the mentioned link on
-                            the page by clicking on
-                            Apply Button.</p>
-                        <ul class="mt-3 text_body_color">
-                            <li>All applicants must send a cover letter along with an updated CV (we encourage
-                                CV no longer than four pages) in English.</li>
-                            <li>Mentioning three referees' details of your present supervisor and HR along with
-                                past employment's supervisor with CV.</li>
-                        </ul>
-                    </div>
-
-
-                    <div class="note-text mt-4 mb-35">
-                        <p> <span>Note: </span> Application s sent by email will not be considered. In addition,
-                            DRC doesn't charge
-                            any fee for any of its recruitment process & believes in equal opportunity in
-                            employment regardless.</p>
-                    </div>
-
-                    <div class="d-flex justify-content-between border-top pt-40">
-                        <button class="theme-btn theme-btn-lg" data-bs-toggle="modal" data-bs-target="#applyModal">apply
-                            now <i class="arrow_right"></i> </button>
-                        <button class="theme-btn theme-btn-primary_alt theme-btn-lg custom-btn"><i
-                                class="icon_ribbon_alt t"></i> Save </button>
-
-                    </div>
                 </div>
             </div>
 
@@ -134,25 +108,24 @@ layout: default
                         </div>
                         <div class="widget-content pt-15 pb-25 pr-25 pl-25">
                             <ul>
-                                <li><span class="name">Established on:</span><span class="value">31 Jan 2021</span></li>
-                                <li><span class="name">Vacancy:</span><span class="value">Not specific</span>
+                                {% for item in page.quicksheet %}
+                                <li><span class="name">Name</span><span class="value">{{ item.name }}</span></li>
+                                <li><span class="name">Founded on</span><span class="value">{{ item.founded }}</span>
                                 </li>
-                                <li><span class="name">Employment Status:</span><span class="value">Full-time</span>
+                                <li>
+                                    <span class="name">Workout "Beatdown" Schedule</span>
+                                    <ul>
+                                        {% assign scheduleArray = item.schedule | split: ',' %}
+                                        {% for schedule in scheduleArray %}
+                                        <li>{{ schedule | strip }}</li>
+                                        {% endfor %}
+                                    </ul>
                                 </li>
-                                <li><span class="name">Experience:</span><span class="value">2 to 3
-                                        year(s)</span>
+                                <li><span class="name">Address</span><span class="value"><a href="{{ location.google-maps-url | prepend: site.baseurl }}" target="_blank">{{ location.address-name }}<br /> {{location.address }}</a></span>
                                 </li>
-                                <li><span class="name">Age:</span><span class="value">Age at most 28
-                                        years</span>
+                                <li><span class="name">Site Q</span><span class="value">{{ item.siteQ }}</span>
                                 </li>
-                                <li><span class="name">Job Location:</span><span class="value">Dhaka</span>
-                                </li>
-                                <li><span class="name">Salary:</span><span class="value">Negotiable</span>
-                                </li>
-                                <li><span class="name">Application Deadline:</span><span class="value">17 Feb
-                                        2021</span>
-                                </li>
-
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>

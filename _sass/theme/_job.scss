@@ -50,7 +50,8 @@
   .widget-content {
     ul {
       li {
-        line-height: 40px;
+        line-height: 25px;
+        margin-bottom: 1.25rem;
         span {
           font-size: 16px;
           color: $theme-text-color;
@@ -59,11 +60,17 @@
           font-family: $Roboto-font;
           font-weight: 500;
           color: $theme-title-color;
-          margin-right: 5px;
+          display: block;
         }
         .value {
           font-family: $Roboto-font;
           font-weight: 400;
+        }
+        > ul li {
+          margin-bottom: 0;
+        }
+        a:hover {
+          color: $primary-color
         }
       }
     }
@@ -283,7 +290,7 @@
 
 .job-description-widget {
   .single-description-para {
-    margin-top: 25px;
+    margin-top: 35px;
 
     h6 {
       font-size: 18px;

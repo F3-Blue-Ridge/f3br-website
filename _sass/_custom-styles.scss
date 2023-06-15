@@ -96,3 +96,54 @@ iframe {
 .breadcrumb {
   font-size: 18px;
 }
+
+.location-images {
+  top: 80px;
+   @media (max-width: 575px) {
+    top: 40px;
+  }
+}
+
+/* slide when not active/center*/
+.slick-slide,
+  .slick-slide[aria-hidden="true"]:not(.slick-cloned)
+  ~ .slick-cloned[aria-hidden="true"] {
+  // transform: scale(0.7, 0.7);
+  transition: transform 0.3s;
+  opacity: 1;
+}
+/* slide when active/center */
+.slick-center,
+  .slick-slide[aria-hidden="true"]:not([tabindex="-1"])
+  + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+.slick-slide img {
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+    .fancy-link {
+      display: inline-block;
+      color: $theme-color;
+      i {
+        transform-origin: left;
+        transform: translateY(2px) scaleX(0);
+        transition: transform 0.3s ease-out;
+        font-size: 20px;
+        display: inline-block;
+      }
+      &:hover {
+        color: $blue-600;
+        i {
+          transform: translateY(2px) scaleX(1);
+        }
+      }
+    }
+
+.job-application-area {
+  @media only screen and (min-width: 575px) and (max-width: 991px) {
+    margin-top: 80px !important;
+  }
+}
