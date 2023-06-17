@@ -573,7 +573,7 @@
   }
 }
 
-.about-area-3 {
+.home-hero-video {
   h5 {
     span {
       font-size: 48px;
@@ -608,31 +608,134 @@
     margin-bottom: 0;
   }
 
-  .video-tut {
+  .theme-btn-2 {
+    transition: all 0.2s ease-in-out;
+    span {
+      color: #4993ff;
+    }
+    i {
+      color: white;
+      font-size: 1.5rem;
+      line-height: 33px;
+      vertical-align: middle;
+      margin-right: 1.4rem;
+    }
+    &::before {
+      left: -2px;
+      width: 54px;
+      border-radius: 44px;
+    }
+    &:hover {
+      color: white;
+      &::before {
+        width: 100%;
+        background-color: $primary;
+      }
+      span {
+        color: white;
+      }
+    }
+  }
+
+  .video {
     position: relative;
     overflow: hidden;
     img {
       width: 100%;
+      border: 10px solid black;
+      filter: brightness(75%);
     }
     .play-btn {
+      transition: all 0.3s ease-in-out;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 74px;
-      width: 74px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.95);
       text-align: center;
       display: inline-block;
-      line-height: 70px;
+      font-size: 7rem;
+      line-height: 100px;
+      &::before {
+        border-radius: 100%;
+        color: rgb(255 255 255 / 51%);
+        background-color: transparent;
+      }
       i {
-        background: $primary-color;
-        text-shadow: 0 7px 15px rgba(#0050b2, 70%);
+        transition: all 0.1s ease-out;
+        background-color: rgba(0,0,0, 0.65);
+        font-size: 3rem;
+        text-shadow: none;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         vertical-align: middle;
+        margin-left: 5px;
       }
+    }
+    &:hover {
+      img {
+        filter: brightness(100%);
+      }
+      .play-btn {
+        color: rgb(255 255 255 /100%);
+        box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.25);
+        // border: 6px solid black;
+        &:before {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  .right {
+    // &::before {
+    //     content: '';
+    //     background-image: url(../img/home/watch-and-learn.svg);
+    //     position: absolute;
+    //     left: 16%;
+    //     bottom: -38%;
+    //     width: 314px;
+    //     height: 87px;
+    //     z-index: 2;
+    //     animation: key1 1s ease-in-out infinite alternate;
+    //   }
+    //   @keyframes key1 {
+    //     0% {transform: translateY(0px);}
+    //     100% {transform: translateY(-10px);}
+    //   }
+  }
+  @media (min-width: 1200px) {
+    .left, .right {
+      position: relative;
+    }
+    .left {
+      left: 45px;
+    }
+    .right {
+      right: 45px;
+      top:150px;
+      &::before {
+        left: -40%;
+        bottom: -26%;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .left {
+      margin-top: 0;
+    }
+    .left > div {
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      padding-top: 1.5rem !important;
+    }
+    .video img {
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    .right::before {
+      display: none;
     }
   }
 }

@@ -5,7 +5,7 @@ author:
   name: 'F3 Blue Ridge'
   email: 'brian.ingles@gmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  F3 Blue Ridge is part of a national network of free, peer-led workouts for men. We plant, grow and serve these groups to invigorate male community leadership.
+  Welcome to F3 Blue Ridge! We are part of a national network of free, peer-led workouts for men. We plant, grow and serve these groups to invigorate male community leadership.
 
 
 # Global Info Banner
@@ -26,7 +26,7 @@ excerpts:
   auto_truncate: true
 
 homepage_hero_video:
-  show: false # Displays or hides video hero banner on homepage
+  show: true # Displays or hides video hero banner on homepage
 
 # Theme configuration
 bootstrap:

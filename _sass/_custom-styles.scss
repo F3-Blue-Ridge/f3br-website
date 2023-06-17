@@ -147,3 +147,30 @@ iframe {
     margin-top: 80px !important;
   }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .pb-md-100 {
+    padding-bottom: 100px;
+  }
+}
+
+.logo-seal {
+  transform: rotate(-8deg);
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  text-align: center;
+  bottom: 100px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 509px;
+  &:hover, &:focus {
+    transform: rotate(0deg);
+  }
+  @media (max-width: 1200px) {
+    width: 75%;
+  }
+}
+
+.lh-lg {
+  line-height: 1.7 !important;
+}
