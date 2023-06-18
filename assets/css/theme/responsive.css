@@ -416,9 +416,9 @@
 
 @media (max-width: 767px) {
   .theme-btn.theme-btn-lg {
-    height: 50px;
+    /* height: 50px;
     line-height: 49px;
-    padding: 0 30px;
+    padding: 0 30px; */
   }
 
   .section-title h2 {
