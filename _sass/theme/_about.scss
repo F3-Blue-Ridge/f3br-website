@@ -574,6 +574,13 @@
 }
 
 .home-hero-video {
+  background-image: url(../img/home/abstract-dots.webp);
+  background-position: 57vw 10vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 992px) {
+    background-image: none;
+  }
   h5 {
     span {
       font-size: 48px;
@@ -638,7 +645,8 @@
   }
 
   .video {
-    overflow: hidden;
+    display: block;
+    background-image: url(../img/home/abstract-dots.webp);
     img {
       width: 100%;
       border: 10px solid black;

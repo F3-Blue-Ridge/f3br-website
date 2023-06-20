@@ -174,3 +174,47 @@ iframe {
 .lh-lg {
   line-height: 1.7 !important;
 }
+
+.primary-gradient {
+  background: rgb(33,133,255) !important;
+  background: linear-gradient(163deg, rgb(33, 133, 255) 31%, rgb(0 98 217) 76%) !important;
+  .theme-btn-2 {
+    span, i {
+      color: white;
+    }
+    &::before {
+      background-color: transparent;
+      border: 2px solid #5ca1ff;
+    }
+  }
+  @media (max-width: 767px) {
+   background: black !important;
+   h4 {
+    font-size: 1.2rem;
+   }
+  .theme-btn-2 {
+      span, i {
+        color: white;
+      }
+      &::before {
+        background-color: $primary-color;
+        border: none;
+      }
+    }
+  }
+}
+
+
+
+.cta-area {
+  background-image: url(../img/home/cta-running.webp);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: soft-light;
+  padding: 70px 110px 70px 100px;
+  @media (max-width: 767px) {
+    background-size: cover;
+    padding: 40px 25px;
+  }
+}
