@@ -449,10 +449,10 @@
 
 .modal-backdrop {
   z-index: 9998;
-  background-color: #172d42;
+  background-color: #000000;
 
   &.show {
-    opacity: 20%;
+    opacity: 60%;
   }
 }
 

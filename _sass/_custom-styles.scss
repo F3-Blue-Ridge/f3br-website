@@ -1,5 +1,9 @@
 @import "theme/main";
 
+.fs-5 {
+  font-size: 1.15rem !important;
+}
+
 @media (max-width: 575px) {
   // .py-sm-0 {
   //   padding-top: 0;
@@ -217,4 +221,46 @@ iframe {
     background-size: cover;
     padding: 40px 25px;
   }
+}
+
+// Custom underline style
+$underlineColor: $primary-color;
+$underlineHeight: 8%;
+
+.underline1 {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 4px;
+  transition: color ease 0.3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: $underlineHeight;
+    left: 0;
+    bottom: 0;
+    background-color: $underlineColor;
+    transition: all ease 0.3s;
+  }
+
+  &:hover {
+    color: white;
+
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+.get-started-img {
+    background: url(../img/get-started/fist-bump.webp) no-repeat center;
+    height: 576px;
+    @media (max-width: 767px) {
+      height: 376px;
+      background-size: cover;
+    }
 }

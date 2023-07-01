@@ -39,7 +39,7 @@
   p {
     font-family: $Roboto-font;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: $theme-text-color;
     line-height: 26px;
   }
@@ -459,7 +459,7 @@
   background-image: linear-gradient(180deg, rgb(0 0 0 / 35%) 0%, rgb(0 0 0) 50%, rgb(0 0 0) 100%), url(../img/home/collage.webp);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y:7px;
+  // background-position-y:7px;
   overflow-x: clip;
 
   @media (max-width: 1300px) {
