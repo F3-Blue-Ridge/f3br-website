@@ -4,6 +4,21 @@
   font-size: 1.15rem !important;
 }
 
+
+a.standard {
+	color: $primary-color;
+	text-decoration: none;
+	display: inline;
+	background-image: linear-gradient(transparent calc(100% - 2px), $primary-color 2px);
+	background-size: 0 4px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	transition: background-size 0.5s ease;
+	&:hover {
+		background-size: 100% 4px;
+	}
+}
+
 @media (max-width: 575px) {
   // .py-sm-0 {
   //   padding-top: 0;
@@ -257,10 +272,10 @@ $underlineHeight: 8%;
 }
 
 .get-started-img {
-    background: url(../img/get-started/fist-bump.webp) no-repeat center;
-    height: 576px;
+    background: url(../img/get-started/fist-bump.webp) no-repeat center center;
+    height: 376px;
+    background-size: contain;
     @media (max-width: 767px) {
-      height: 376px;
       background-size: cover;
     }
 }
