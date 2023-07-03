@@ -279,3 +279,79 @@ $underlineHeight: 8%;
       background-size: cover;
     }
 }
+.about-img {
+  @media (max-width: 767px) {
+    transform: scale(1.5);
+  }
+}
+
+.fitness {
+  position: absolute;
+  top: -13.75rem;
+  @media (max-width: 575px) {
+      top: -11.75rem;
+  }
+
+  h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    overflow: hidden;
+    @media (max-width: 575px) {
+      font-size: 6rem;
+    }
+  }
+  h2::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: url(../img/about/man-pushup.svg) no-repeat;
+    width: 279px;
+    height: 83px;
+    top: 2.4rem;
+    @media (max-width: 811px) {
+      left: 12.25rem;
+      top: -2rem;
+    }
+    @media (max-width: 575px) {
+      width: 60%;
+      left: 7rem;
+      top: -2rem;
+      transform: scale(.75);
+    }
+  }
+}
+
+.fitness-images {
+  position: relative;
+  > div {
+    position: absolute;
+    border-radius: 6px;
+    img {
+      border-radius: 6px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      padding-top: 2rem;
+      border: 0 !important;
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+  .image-1 {
+    top: 50px;
+    z-index: 2;
+    right: 0;
+  }
+  .image-2 {
+    bottom: 50px;
+    left: 130px;
+    z-index: 3;
+    border: 8px solid black;
+
+  }
+}
