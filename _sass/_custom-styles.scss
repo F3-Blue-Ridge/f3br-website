@@ -279,9 +279,10 @@ $underlineHeight: 8%;
       background-size: cover;
     }
 }
-.about-img {
+.about-img img {
   @media (max-width: 767px) {
     transform: scale(1.5);
+    padding: 2rem 0;
   }
 }
 
