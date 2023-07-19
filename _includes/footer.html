@@ -6,7 +6,9 @@
 
         <div class="col-lg-4 col-sm-6 text-center text-sm-start ms-0 ">
           <div class="footer-widget wow fadeInLeft mb-30 text-center">
-            <img src="{{ site.baseurl }}/assets/img/logo/f3-logo-white.png" alt="Official F3 Logo">
+            <a href="{{ "/index" | absolute_url }}">
+              <img src="{{ site.baseurl }}/assets/img/logo/f3-logo-white.png" alt="Official F3 Logo">
+            </a>
             <div class="footer-text mt-4 mb-20">
               <p>"Leave no man behind, but leave no man where you found him."</p>
             </div>
@@ -21,9 +23,10 @@
             </div>
             <div class="footer-link">
               <ul>
-                <li><a href="#"> Getting Started </a></li>
+                <li><a href="{{ site.baseurl }}/about">About F3</a></li>
+                <li><a href="{{ site.baseurl }}/get-started"> Getting Started </a></li>
                 <li><a href="#"> Top 10 tips for new guys</a></li>
-                <li><a href="#"> What is F3 video</a></li>
+                <li><a data-fancybox href="https://vimeo.com/143444379"> What is F3 video</a></li>
               </ul>
             </div>
           </div>

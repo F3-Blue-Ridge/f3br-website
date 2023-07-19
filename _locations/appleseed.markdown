@@ -16,7 +16,7 @@ location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.3
 quicksheet:
   - name: Appleseed
     founded: Jan 2021
-    schedule: Wed - 0530, Sat 0700
+    schedule: Wed - 0530, Sat - 0700
     siteQ: Bobcat
 slider-images:
   - image1: /assets/img/locations/appleseed/slider-image-1.webp
@@ -29,4 +29,4 @@ slider-images:
     image8: /assets/img/locations/appleseed/slider-image-8.webp
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum libero nisi, at fringilla urna ultricies nec. Aenean a vestibulum nibh. Ut fringilla turpis orci, ac egestas ex ullamcorper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc at dictum urna. Mauris porttitor massa in tempor consequat. Nulla id elementum leo. Nulla vitae nunc metus. Suspendisse convallis volutpat neque non dictum. Nam a eros varius, congue diam id, ultricies ante. Cras dapibus lacus mollis dui gravida finibus. Aliquam erat volutpat. Maecenas nisl augue, mattis quis consequat sit amet, hendrerit at elit. Nulla facilisi. Aenean semper vitae lectus malesuada mollis.
+We are AO Appleseed! Join our community of “Seedlings” as we cultivate strength, camaraderie, and personal growth in the picturesque landscapes of Winchester, Virginia. Our sessions blend dynamic exercises, functional training, and natural elements to challenge your body and accelerate your limits. Whether you're a fitness enthusiast, a beginner, or anywhere in between, our peer led workouts cater to all levels, offering modifications as needed, fostering friendships and a sense of belonging, and embracing the F3 Credo: “Leave no man behind, but leave no man where you found him”. We have regular attendance from ages 10 to 60, giving younger and more “seasoned” members the same opportunity to reconnect with nature, discover hidden potential, and become a thriving member of the Appleseed community. Join us and sow the seeds of Fitness, Fellowship, and Faith in the beautiful Shenandoah Valley.

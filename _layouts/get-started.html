@@ -211,13 +211,13 @@ layout: default
 </section>
 
 <!-- Customize Card section start-->
-<section class="customize-card-area pt-lg-100 pb-lg-140 pt-105 pb-115 bg_disable" id="card_area_animation">
+<section class="customize-card-area pt-lg-100 pt-80 pb-lg-100 pb-20 bg_disable" id="card_area_animation">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 pe-lg-0">
-                <div class="mb-35 text-start">
-                    <h2 class="wow fadeInUp fw-bold mb-3">Do I need to bring anything?</h2>
-                    <p class="text-lead wow fadeInUp" data-wow-delay="0.3s"><span class="fw-bold">YES.</span> There are a few items we'd recommend for your first F3 workout.</p>
+                <div class="mb-lg-35 text-start">
+                    <h2 class="wow fadeInUp fw-bold mb-4">Do I need to bring anything?</h2>
+                    <p class="text-lead fs-5 wow fadeInUp" data-wow-delay="0.3s"><span class="fw-bold">YES.</span> There are a few items we'd recommend for your first F3 workout.</p>
                 </div>
             </div>
         </div>
@@ -251,26 +251,9 @@ layout: default
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 pl-lg-50">
+            <div class="col-lg-6 pl-lg-50 d-none d-md-block">
                 <div class="card-img mb-5 mb-sm-0">
-
                     <img class="img-fluid" src="{{ site.baseurl }}/assets/img/get-started/coupons.webp" alt="gloves">
-                    <!--
-                    <div class="shape-1">
-
-                        <img class="layer wow rotateInUpRight" data-wow-delay="1.2s" data-depth="0.2"
-                            src="{{ site.baseurl }}/assets/img/get-started/gloves.webp" alt="card">
-                    </div>
-                    <div class="shape-2">
-
-                        <img class="layer wow rotateInUpRight" data-wow-delay="0.6s" data-depth="0.15"
-                            src="{{ site.baseurl }}/assets/img/get-started/gloves.webp" alt="card">
-                    </div>
-                    <div class="shape-3">
-
-                        <img class="layer wow rotateInUpRight" data-depth="0.3" src="{{ site.baseurl }}/assets/img/get-started/cinder-block.webp"
-                            alt="card">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -278,29 +261,4 @@ layout: default
 </section>
 <!-- Customize Card section end-->
 
-<section class="cta-area bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 position-relative px-0">
-                <div class="cta-alt">
-
-                    <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <div class="cta-content wow fadeInRight">
-                                <h2 class="mb-10">Okay, how do I try F3? <br /> Simple. You just show up.</h2>
-                                <p class="lead">No forms. No RSVPs. No waivers. Just find a location near you and show up a few minutes before the workout begins (usually 0530).</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 text-center text-md-end">
-                            <div class="cta-content text-md-end mt-3 mt-md-0">
-                                <a href="{{ site.baseurl }}/locations"
-                                    class="theme-btn theme-btn-alt wow fadeInLeft m-0">FIND A LOCATION</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{%- include cta-banner.html -%}

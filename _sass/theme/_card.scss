@@ -130,22 +130,25 @@
   padding: 5px;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #dcdee0;
+  border: none;
   background-color: #fff;
   transition: all 0.3s ease-out;
   &:hover {
-    box-shadow: 0 20px 45px 0 rgba(#334d72, 15%);
+    box-shadow:none;
+    img {
+      filter: brightness(0.5);
+    }
   }
   img {
     border-radius: 8px;
   }
   .card-content {
-    padding: 30px 20px;
+    padding: 15px 0;
     h4 {
-      font-size: 24px;
+      font-size: 20px;
       font-family: $Poppins-font;
       font-weight: 600;
-      color: $theme-title-color;
+      color: $primary-color;
     }
     P {
       span {
