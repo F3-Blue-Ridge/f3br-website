@@ -121,7 +121,7 @@
     margin-left: 0.5rem;
   }
 
-  .header-menu .theme-btn{
+  .header-menu .theme-btn {
     margin-left: 2rem;
   }
 }
@@ -168,8 +168,11 @@
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #0050b2;
     color: #fff;
+    font-size: 20px;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 50px;
   }
 
   .navbar-toggler {
@@ -427,7 +430,7 @@
 
   .section-title h1,
   .faq-area-3 h1 {
-    font-size:50px;
+    font-size: 50px;
   }
 
   .underline-shape::after {
@@ -948,12 +951,14 @@
     font-size: 16px;
   }
 
-  .cta-content .theme-btn {
-    height: 50px;
-    line-height: 48px;
+  /* .cta-content .theme-btn {
+    height: 60px;
+    line-height: 62px;
     padding: 0 30px;
     font-size: 18px;
-  }
+    font-weight: bolder;
+    letter-spacing: 0.05rem;
+  } */
 
   .cta.cta-2 {
     padding: 35px 45px;
