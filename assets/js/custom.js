@@ -275,7 +275,6 @@ if ($ ('.testimonial-slider').length) {
   if ($(".client-slider").length) {
     $(".client-slider").slick({
       dots: true,
-      rtl: true,
       arrows: false,
       centerMode: false,
       slidesToShow: 3,
