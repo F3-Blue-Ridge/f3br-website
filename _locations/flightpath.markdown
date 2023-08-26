@@ -1,21 +1,21 @@
 ---
-title: Flight Path
+title: Flightpath
 layout: location
 nav-dark-mode: true
-thumbnail: /assets/img/locations/location-thumbnail-flightpath.webp
-thumbnail-back: /assets/img/locations/flightpath/slider-image-2.webp
+thumbnail: /assets/img/locations/flightpath/thumbnail.webp
+thumbnail-back: /assets/img/locations/flightpath/slider-image-5.webp
 workout-type: Bootcamp
-address-name: Jefferson County Memorial Park
-address: Forrest Ave, Charles Town, WV 25414
-google-maps-url: https://goo.gl/maps/DzbfrKAnU4d9BATw6
+address-name: Valley View Elementary
+address: 140 Nadenbousch Ln, Martinsburg, WV 25405
+google-maps-url: https://goo.gl/maps/7Mrq5dYTuJna3Ltz9
 siteQ: Rigger
 weekdays: MON, WED - 0530
 weekends:
-location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.232286153266!2d-77.85693140570122!3d39.28298235075496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b60169b1a365a7%3A0x9f9f25540da608e4!2sJefferson%20County%20Memorial%20Park!5e0!3m2!1sen!2sus!4v1688402221565!5m2!1sen!2sus
+location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.8483856866637!2d-78.0139655!3d39.3823084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ca00ca1f99d147%3A0x8a9e303bf88ed43d!2sValley%20View%20Elementary!5e0!3m2!1sen!2sus!4v1692915976968!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
-  - name: Flight Path
-    founded: September 2021
+  - name: Flightpath
+    founded: September 15, 2021
     schedule: Mon - 0530, Wed - 0530
     siteQ: Rigger
 slider-images:
@@ -29,5 +29,4 @@ slider-images:
     image8: /assets/img/locations/flightpath/slider-image-8.webp
 ---
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum libero nisi, at fringilla urna ultricies nec. Aenean a vestibulum nibh. Ut fringilla turpis orci, ac egestas ex ullamcorper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc at dictum urna. Mauris porttitor massa in tempor consequat. Nulla id elementum leo. Nulla vitae nunc metus. Suspendisse convallis volutpat neque non dictum. Nam a eros varius, congue diam id, ultricies ante. Cras dapibus lacus mollis dui gravida finibus. Aliquam erat volutpat. Maecenas nisl augue, mattis quis consequat sit amet, hendrerit at elit. Nulla facilisi. Aenean semper vitae lectus malesuada mollis.
+We are AO Flight Path! Come take flight as we navigate to build strength, fellowship, and personal growth in Wild and Wonderful landscapes of Pikeside, West Virginia. Peer led, our workouts blend high intensity exercises, functional training, and natural elements to challenge your body, expand your mind, and push your limits. Whether you're a fitness enthusiast or a beginner, the sky's the limit with our tailored workouts “modifying as necessary”, fostering friendships and a sense of belonging. Connect with other men through Fitness, Fellowship, and Faith! Discover your potential, and become an accelerating member of Flight Path. Join us today as we take an adventure of strength, spirituality, and brotherhood in Wild and Wonderful West Virginia.

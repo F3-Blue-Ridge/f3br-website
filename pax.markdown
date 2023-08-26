@@ -1,6 +1,6 @@
 ---
 title: Pax
-layout: page
+layout: pax
 permalink: /pax
 show-in-nav: true
 menu-order: 5
@@ -33,5 +33,3 @@ menu-order: 5
 #         menu-order: 1
 #         url: /level2-menu3.html
 ---
-# PAX
-Ahoy! This be the PAX resource page matey...treasures are about these here parts.

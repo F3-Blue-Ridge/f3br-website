@@ -25,7 +25,6 @@
               <ul>
                 <li><a href="{{ site.baseurl }}/about">About F3</a></li>
                 <li><a href="{{ site.baseurl }}/get-started"> Getting Started </a></li>
-                <li><a href="#"> Top 10 tips for new guys</a></li>
                 <li><a data-fancybox href="https://vimeo.com/143444379"> What is F3 video</a></li>
               </ul>
             </div>
@@ -36,10 +35,10 @@
             </div>
             <div class="footer-link">
               <ul>
-                <li><a href="#"> F3 Nation Official</a></li>
-                <li><a href="#"> Gear &amp; Stuff</a></li>
-                <li><a href="#"> F3 Gateway Podcast</a></li>
-                <li><a href="#"> Growruck</a></li>
+                <li><a href="https://f3nation.com/" target="_blank"> F3 Nation Official</a></li>
+                <li><a href="https://f3.mudgear.com/" target="_blank"> Gear &amp; Stuff</a></li>
+                <li><a href="https://open.spotify.com/show/2cLqceVM5G1R5ZKUVNLHr3?si=01ded7c8706b4ae3" target="_blank"> F3 Gateway Podcast</a></li>
+                <li><a href="https://growruck.com/" target="_blank"> Growruck</a></li>
               </ul>
             </div>
           </div>
@@ -51,14 +50,14 @@
             </div>
             <div class="footer-link">
               <ul>
-                <li><a href="#"> Backblasts</a></li>
+                {{/*  <li><a href="#"> Backblasts</a></li>
                 <li><a href="#"> Focus on the Form</a></li>
                 <li><a href="#"> Safety Steps</a></li>
-                <li><a href="#"> AO Stats</a></li>
-                <li><a href="#"> QSource</a></li>
-                <li><a href="https://f3nation.com/lexicon/#:~:text=The%20F3%20Lexicon%20is%20intended,leader%20of%20a%20given%20workout)." target="_blank"> Lexicon (the Lingo)</a></li>
-                <li><a href="#"> Exicon (Exercises)</a></li>
-                <li><a href="#"> Leadership Guide</a></li>
+                <li><a href="#"> AO Stats</a></li>  */}}
+                <li><a href="https://f3nation.com/q-source/" target="_blank"> QSource</a></li>
+                <li><a href="https://f3nation.com/lexicon/" target="_blank"> Lexicon (the Lingo)</a></li>
+                <li><a href="https://f3nation.com/exicon/" target="_blank"> Exicon (Exercises)</a></li>
+                <li><a href="https://f3nation.com/q/" target="_blank"> Leadership Guide</a></li>
               </ul>
             </div>
           </div>
@@ -94,22 +93,30 @@
         </div>  */}}
         <div class="col-lg-6 my-3 my-sm-0">
           <div class="copyright-text">
-            <p>&copy; F3 Blue Ridge 2023. All rights reserved. <br class="d-sm-none"><a class="ms-2" href="https://f3nation.com/disclaimer-and-notice/" target="_blank">Disclaimer &amp; Notice</a>
+            <p>&copy; F3 Blue Ridge 2023. All rights reserved. <br class="d-sm-none"><a class="ms-2" href="https://f3nation.com/disclaimer-and-notice/" target="_blank">Disclaimer &amp; Notice.</a><a class="banana" data-fancybox="" href="https://youtu.be/HNd9YvKa6mc" tabindex="0" data-bs-toggle="tooltip"
+              data-bs-title="C'mon, do it...you know you want to click it.">
+              <img src="{{ site.baseurl }}/assets/img/emojii/banana-emojii.png" alt="Banana Emojii of mystery">
+            </a>
             </p>
+
           </div>
         </div>
         <div class="col-lg-6 text-right text-lg-end wow" data-wow-delay="0.3s">
-          <a class="banana" data-fancybox="" href="https://youtu.be/HNd9YvKa6mc" tabindex="0" data-bs-toggle="tooltip" data-bs-title="C'mon, do it...you know you want to click it.">
-            <img src="{{ site.baseurl }}/assets/img/emojii/banana-emojii.png" alt="Banana Emojii of mystery">
-          </a>
-          {{/*  <div class="social-button">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>  */}}
+          <div class="social-button">
+            {%- if social.facebook -%}
+            <a href="{{ social.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            {%- endif -%}
+            {%- if social.instagram -%}
+            <a href="{{ social.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+            {%- endif -%}
+            {%- if social.twitter -%}
+            <a href="{{ social.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+            {%- endif -%}
+            {%- if social.slack-%}
+            <a href="{{ social.slack }}" target="_blank"><i class="fab fa-slack"></i></a>
+            {%- endif -%}
+          </div>
         </div>
-
       </div>
     </div>
   </div>
