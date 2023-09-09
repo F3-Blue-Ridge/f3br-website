@@ -1,5 +1,5 @@
 ---
-title: Flightpath
+title: Flight Path
 layout: location
 nav-dark-mode: true
 thumbnail: /assets/img/locations/flightpath/thumbnail.webp
@@ -14,7 +14,7 @@ weekends:
 location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.8483856866637!2d-78.0139655!3d39.3823084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ca00ca1f99d147%3A0x8a9e303bf88ed43d!2sValley%20View%20Elementary!5e0!3m2!1sen!2sus!4v1692915976968!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
-  - name: Flightpath
+  - name: Flight Path
     founded: September 15, 2021
     schedule: Mon - 0530, Wed - 0530
     siteQ: Rigger

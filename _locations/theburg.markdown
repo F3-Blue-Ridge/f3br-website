@@ -8,9 +8,9 @@ workout-type: Bootcamp
 address-name: Leesburg Town Hall
 address: 25 W Market Street, Leesburg, VA 20176
 google-maps-url: https://goo.gl/maps/dftNJQss2muFAPq56
-siteQ: Madonna & Suspension
+siteQ: Flame
 weekdays: MON, WED, FRI - 0530
-weekends: SAT - 0700
+weekends:
 location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5472755189085!2d-77.56844451982809!3d39.1167761309379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d6edc11847%3A0xd0eb684c1872cb58!2sLeesburg%20Town%20Hall!5e0!3m2!1sen!2sus!4v1688403551294!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
