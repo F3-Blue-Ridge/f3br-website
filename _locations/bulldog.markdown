@@ -10,13 +10,13 @@ address: 551 E A St, Purcellville, VA 20132
 google-maps-url: https://goo.gl/maps/tDASKjWKthWvP6T27
 siteQ: Gigawatt
 weekdays: MON, WED, FRI - 0530
-weekends: SAT - 0800
+weekends:
 location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.0392403299925!2d-77.7070961!3d39.1283385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b61053d7549d6d%3A0x5d856794242088f2!2sBlue%20Ridge%20Middle%20School!5e0!3m2!1sen!2sus!4v1686844485324!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
   - name: Bulldog
     founded: October 31, 2020
-    schedule: Mon - 0530, Wed - 0530, Fri - 0530, Sat - 0800 (Kid "2.0" friendly)
+    schedule: Mon - 0530, Wed - 0530, Fri - 0530
     siteQ: Gigawatt
 slider-images:
   - image1: /assets/img/locations/bulldog/slider-image-1.webp
