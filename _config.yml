@@ -11,10 +11,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: 'Join us on Labor Day for an epic 40-mile journey as we conquer the WO&D Doom Walk challenge!'
+  message: "'The Iron PAX Challenge 2023 is going on now! Don't forget to register and log your times/scores!'"
   message_attention_word: 'ATTENTION:'
   url_action_word: 'Get Details'
-  url: /news/csaup/wod-doom-walk
+  url: https://f3greenwood.wordpress.com/
 
 # Homepage
 excerpts:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
+title: "Kitchen Sink UI Examples"
 categories: junk
 author:
 - Bart Simpson

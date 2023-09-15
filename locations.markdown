@@ -10,12 +10,12 @@ submenu: # It would be nice to be able to dynamically populate this...see https:
     url: /locations/appleseed
   - title: Bulldog
     url: /locations/bulldog
-  - title: Packhorse
-    url: /locations/packhorse
+  - title: Flight Path
+    url: /locations/flightpath
   - title: Forged
     url: /locations/forged
-  - title: Flightpath
-    url: /locations/flightpath
+  - title: Foxtrot
+    url: /locations/foxtrot
   - title: Iron Works
     url: /locations/ironworks
   - title: Kodiak
@@ -28,8 +28,6 @@ submenu: # It would be nice to be able to dynamically populate this...see https:
     url: /locations/theburn
   - title: The Settlement
     url: /locations/thesettlement
-  - title: Foxtrot
-    url: /locations/foxtrot
   - title: Valhalla
     url: /locations/valhalla
   - title: Wolverine

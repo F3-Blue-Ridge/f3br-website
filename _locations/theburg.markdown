@@ -8,7 +8,7 @@ workout-type: Bootcamp
 address-name: Leesburg Town Hall
 address: 25 W Market Street, Leesburg, VA 20176
 google-maps-url: https://goo.gl/maps/dftNJQss2muFAPq56
-siteQ: Flame
+siteQ: Bail
 weekdays: MON, WED, FRI - 0530
 weekends:
 location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5472755189085!2d-77.56844451982809!3d39.1167761309379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d6edc11847%3A0xd0eb684c1872cb58!2sLeesburg%20Town%20Hall!5e0!3m2!1sen!2sus!4v1688403551294!5m2!1sen!2sus
@@ -17,7 +17,7 @@ quicksheet:
   - name: The Burg
     founded: June 2021
     schedule: Mon - 0530, Wed - 0530, Friday - 0530
-    siteQ: Flame
+    siteQ: Bail
 slider-images:
   - image1: /assets/img/locations/theburg/slider-image-3.webp
     image2: /assets/img/locations/theburg/slider-image-2.webp

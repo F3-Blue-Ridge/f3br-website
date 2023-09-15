@@ -463,3 +463,14 @@ $underlineHeight: 8%;
     z-index: 5;
   }
 }
+
+h3 a.post-link.standard {
+  color: initial;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.post-meta {
+  font-size: 12px;
+}

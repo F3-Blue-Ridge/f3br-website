@@ -437,7 +437,10 @@ input::-webkit-inner-spin-button {
 /*----------------------------------------*/
 /*   Back To Top Button CSS
 /*----------------------------------------*/
-#back-to-top {
+
+
+
+#back-to-top, #feedback {
   display: inline-block;
   background-color: rgba(220, 220, 220, 0.8);
   width: 50px;
@@ -453,7 +456,7 @@ input::-webkit-inner-spin-button {
   z-index: 1000;
 }
 
-#back-to-top::after {
+#back-to-top::after, #feedback::after {
   content: "2";
   font-family: eleganticons;
   font-weight: normal;
@@ -463,22 +466,36 @@ input::-webkit-inner-spin-button {
   color: #000;
 }
 
-#back-to-top:hover {
+#back-to-top:hover, #feedback:hover {
   cursor: pointer;
   background-color: #333;
 }
 
-#back-to-top:hover::after {
+#back-to-top:hover::after, #feedback:hover::after {
   color: #fff;
 }
 
-#back-to-top:active {
+#back-to-top:active, #feedback:active {
   background-color: #555;
 }
 
-#back-to-top.show {
+#back-to-top.show, #feedback.show {
   opacity: 1;
   visibility: visible;
+}
+
+#feedback {
+  bottom: 100px;
+  font-size: 2rem;
+}
+
+#feedback::after {
+  content: '';
+  font-size: 2rem;
+}
+
+#feedback:hover {
+  color: #fff;
 }
 
 /*----------------------------------------------------*/
@@ -10431,9 +10448,6 @@ blockquote .author span {
 .fa, .fas {
   font-weight: 900
 }
-
-
-
 
 
 /*----------------------------------------------------*/

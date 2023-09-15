@@ -116,6 +116,20 @@
     $("html, body").animate({ scrollTop: 0 }, "300");
   });
 
+
+// === Back to Top Button
+var feedback_btn = $ ('#feedback');
+
+$ (window).scroll (function () {
+  if ($ (window).scrollTop () > 300) {
+    feedback_btn.addClass ('show');
+  } else {
+    feedback_btn.removeClass ('show');
+  }
+});
+
+
+
   //initialize wow js
   new WOW({}).init();
 
@@ -274,7 +288,7 @@ if ($ ('.testimonial-slider').length) {
   }
   if ($(".client-slider").length) {
     $(".client-slider").slick({
-      dots: true,
+      dots: false,
       arrows: false,
       centerMode: false,
       slidesToShow: 3,
@@ -285,9 +299,11 @@ if ($ ('.testimonial-slider').length) {
       responsive: [
         {
           breakpoint: 1200,
+
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            dots: true,
           },
         },
         {
@@ -295,6 +311,7 @@ if ($ ('.testimonial-slider').length) {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            dots: true,
           },
         },
       ],
