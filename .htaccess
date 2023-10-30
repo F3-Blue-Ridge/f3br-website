@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+Redirect 301 /home/locations    https://f3blueridge.com/locations
