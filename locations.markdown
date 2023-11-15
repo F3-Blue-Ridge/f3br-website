@@ -10,6 +10,8 @@ submenu: # It would be nice to be able to dynamically populate this...see https:
     url: /locations/appleseed
   - title: Bulldog
     url: /locations/bulldog
+  - title: Cedar Creek
+    url: /locations/cedarcreek
   - title: Flight Path
     url: /locations/flightpath
   - title: Forged
