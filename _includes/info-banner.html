@@ -7,12 +7,12 @@
                     <p>
                         <span class="pe-1">
                             <i class="bi bi-megaphone-fill pe-1"></i>
-                            <!--<strong>{{ site.info_banner.message_attention_word }}</strong>-->
+                            <strong>{{ site.info_banner.message_attention_word }}</strong>
                         </span>
                         {{ site.info_banner.message }}
                         <span class="ps-3">
                             {%- if site.info_banner.url -%}
-                            <a href="{{ site.info_banner.url }}" target="_blank">
+                            <a href="{{ site.info_banner.url }}">
                                 {{ site.info_banner.url_action_word }}
                             </a>
                             {%- endif -%}

@@ -11,10 +11,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "Congratulations to all those who participated and survived the Iron PAX Challenge this year!"
+  message: "It is that time of year again... its time to kick off the 2024 F3 Blue Ridge Winter Challenge!"
   message_attention_word: 'ATTENTION:'
-  url_action_word: 'View the results'
-  url: https://f3greenwood.wordpress.com/ironpax/archive/
+  url_action_word: 'Learn More'
+  url: /news/event/winter-challenge-2024
 
 # Homepage
 excerpts:
@@ -60,6 +60,7 @@ bootstrap:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 
 github:
