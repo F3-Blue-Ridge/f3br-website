@@ -7,8 +7,9 @@ thumbnail: /assets/img/posts/winter-challenge-2024.webp
 ---
 <br />
 
+<h4>Its time to kick off the 2024 F3 Blue Ridge Winter Challenge!</h4>
 <img src="/assets/img/posts/winter-challenge-2024.webp" class="mb-4" alt="Winter Challenge Poster Image">
-<h4>It is that time of year again!  <br />Time to kick off the 2024 F3 Blue Ridge Winter Challenge!</h4>
+
 
 <br />
 
@@ -79,8 +80,16 @@ Accumulate 55 points over the 91 days, and you will receive the shirt.
 
 <br />
 
-To enter points, we will use the <a href="https://f3blueridge.slack.com/archives/C02R1SDKZKK" class="standard" target="_blank">#winter-challenge channel</a>.  The first person to complete an action for the day will enter it and a number emoji like this.  <img src="/assets/img/posts/slack-emojii-one-point.png" style="max-width:25px;"> to indicate the points.  Others who complete the activity will simply enter the emoji number (no need to re-enter the text). Planer and Redrum will tally points and will get input from our Nantan Shute to resolve any discrepancies or unclear circumstances.
+To enter points, please use the Google form <a href="https://forms.gle/bQWmAkP9Hn2i8par8" class="standard" target="_blank">here</a>. For any comment, questions or general info hit up the <a href="https://f3blueridge.slack.com/archives/C02R1SDKZKK" class="standard" target="_blank">#winter-challenge</a> Slack channel. With that, get on out there, show up, bring your FNGs, have fun, and get those numbers across the region! Aye!
 
 <br />
 
-So with that, get on out there, show up, bring your FNGs, have fun, and get those numbers across the region!  Aye!
+<a class="theme-btn" href="https://forms.gle/bQWmAkP9Hn2i8par8" target="_blank">Log Points Now</a>
+
+<br /><br />
+
+### Leaderbaord
+
+<br />
+
+<iframe width="1118" height="690" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTvJxHzlu1VA66UthFaTvGg_CaAJEmVRNJ2y_ZTf1y7zOBZGTnJktvu05x-yDLVgIcsyXc_hlRfePEU/pubchart?oid=1337271686&amp;format=interactive"></iframe>
