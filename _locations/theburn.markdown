@@ -5,13 +5,13 @@ nav-dark-mode: true
 thumbnail: /assets/img/locations/theburn/thumbnail.webp
 thumbnail-back: /assets/img/locations/theburn/slider-image-2.webp
 workout-type: Bootcamp
-address-name: Stone Bridge High School
-address: 43100 Hay Rd, Ashburn, VA 20147
-google-maps-url: https://goo.gl/maps/GmgrXQQGWhBbxS9h6
+address-name: Trailside Park
+address: 20375 Claiborne Pkwy, Ashburn, VA 20147
+google-maps-url: https://maps.app.goo.gl/SwJJkrGtJJhHxvyA9
 siteQ: Mullet
 weekdays: THURS - 0530
 weekends:
-location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.524180731386!2d-77.5084825!3d39.04896699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63e8eade2be9f%3A0x19474cf24a7c6513!2sStone%20Bridge%20High%20School!5e0!3m2!1sen!2sus!4v1694045420962!5m2!1sen!2sus
+location-map-embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12393.297982649008!2d-77.5062191!3d39.0535186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63e84de536a75%3A0xecadebba7f3011af!2sTrailside%20Park!5e0!3m2!1sen!2sus!4v1712174796954!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
   - name: The Burn

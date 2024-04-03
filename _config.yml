@@ -11,7 +11,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "It is that time of year again... its time to kick off the 2024 F3 Blue Ridge Winter Challenge!"
+  message: "We are down to the last few days of the 2024 F3 Blue Ridge Winter Challenge, get your points in now!"
   message_attention_word: 'ATTENTION:'
   url_action_word: 'Learn More'
   url: /news/event/winter-challenge-2024
