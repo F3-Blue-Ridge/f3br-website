@@ -7,14 +7,13 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to F3 Blue Ridge! We are part of a national network of free, peer-led workouts for men. We plant, grow and serve these groups to invigorate male community leadership.
 
-
 # Global Info Banner
 info_banner:
   show: true
-  message: "We are down to the last few days of the 2024 F3 Blue Ridge Winter Challenge, get your points in now!"
+  message: "The Capital's annual 9/11 Stair Climb CSAUP is approaching! Sign up and start training PAX!"
   message_attention_word: 'ATTENTION:'
-  url_action_word: 'Learn More'
-  url: /news/event/winter-challenge-2024
+  url_action_word: 'Sign Up'
+  url: https://docs.google.com/forms/d/e/1FAIpQLSfemd1Dah5zEuHhU-P3i2-LQwmGZwjJNdM4dd5KhpJQvU1hlw/viewform
 
 # Homepage
 excerpts:
@@ -54,14 +53,12 @@ bootstrap:
     #discord: 'https://example.com/@jekyllrb'
     slack: 'https://join.slack.com/t/f3blueridge/shared_invite/zt-1uftefr3q-qMCMZ57P2J67TH2IM413Yw'
 
-
 # Build settings
 # theme: jekyll-bootstrap-theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
-
 
 github:
   source:

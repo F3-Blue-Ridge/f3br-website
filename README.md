@@ -6,7 +6,7 @@
 <p align="center">
   <i align="center">The public-facing website for the F3 Blue Ridge region.</i>
 </p>
-<p align="center">  
+<p align="center">
 <a href="https://github.com/F3-Blue-Ridge/f3br-website/actions/workflows/jekyll.yml">
     <img src="https://github.com/F3-Blue-Ridge/f3br-website/actions/workflows/jekyll.yml/badge.svg">
     </a>
