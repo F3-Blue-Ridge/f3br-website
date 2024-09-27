@@ -10,10 +10,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "The Capital's annual 9/11 Stair Climb CSAUP is approaching! Sign up and start training PAX!"
+  message: "The 2024 The IronPax Challenge is underway! "
   message_attention_word: 'ATTENTION:'
-  url_action_word: 'Sign Up'
-  url: https://docs.google.com/forms/d/e/1FAIpQLSfemd1Dah5zEuHhU-P3i2-LQwmGZwjJNdM4dd5KhpJQvU1hlw/viewform
+  url_action_word: 'Regsiter today'
+  url: https://docs.google.com/forms/d/e/1FAIpQLSfAH6sdMjfCwrhnlWwf91nRYlQCwFQK9moTn1TKHxhPEvDimQ/viewform
 
 # Homepage
 excerpts:

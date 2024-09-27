@@ -5,13 +5,13 @@ nav-dark-mode: true
 thumbnail: /assets/img/locations/theburg/thumbnail.webp
 thumbnail-back: /assets/img/locations/theburg/slider-image-1.webp
 workout-type: Bootcamp
-address-name: Leesburg Town Hall
-address: 25 W Market Street, Leesburg, VA 20176
-google-maps-url: https://goo.gl/maps/dftNJQss2muFAPq56
+address-name: Loudoun County Garage
+address: 146 Loudoun St SW, Leesburg, VA 20175
+google-maps-url: https://maps.app.goo.gl/7MnrVohF7f4frs1S7
 siteQ: Bail
 weekdays: MON, WED, FRI - 0530
 weekends:
-location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5472755189085!2d-77.56844451982809!3d39.1167761309379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d6edc11847%3A0xd0eb684c1872cb58!2sLeesburg%20Town%20Hall!5e0!3m2!1sen!2sus!4v1688403551294!5m2!1sen!2sus
+location-map-embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18944.896498647406!2d-77.5630638!3d39.11383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d613dce93f%3A0xd5fb6bb8870891f8!2sLoudoun%20County%20Garage!5e1!3m2!1sen!2sus!4v1727441036692!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
   - name: The Burg
@@ -29,7 +29,7 @@ slider-images:
     image8: /assets/img/locations/theburg/slider-image-8.webp
 ---
 
-<p>Welcome to AO The Burg!  The Burg proudly boasts not only the Town Hall Lawn for our normal beatdowns, but a full parking garage/stairs and a ‘heated’ basement for those extra cold mornings (hence the nickname “The Bougie”)!  If this is your first time, don’t fret! We are always excited to see a new guy show up on a gloomy morning for a workout!  We will go out of our way to make you feel welcome.</p>
+<p>Welcome to AO The Burg! The Burg proudly boasts a full parking garage and stairs as options for those early morning beatdowns. If this is your first time, don’t fret! We are always excited to see a new guy show up on a gloomy morning for a workout!  We will go out of our way to make you feel welcome.</p>
 
 <br />
 
