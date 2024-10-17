@@ -2,7 +2,7 @@
 title: The Settlement
 layout: location
 nav-dark-mode: true
-thumbnail: /assets/img/locations/thumbnail.webp
+thumbnail: /assets/img/locations/thesettlement/thumbnail.webp
 thumbnail-back: /assets/img/locations/thesettlement/slider-image-2.webp
 workout-type: Bootcamp
 address-name: Town Green

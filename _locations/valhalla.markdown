@@ -2,7 +2,7 @@
 title: Valhalla
 layout: location
 nav-dark-mode: true
-thumbnail: /assets/img/locations/thumbnail.webp
+thumbnail: /assets/img/locations/valhalla/thumbnail.webp
 thumbnail-back: /assets/img/locations/valhalla/slider-image-1.webp
 workout-type: Bootcamp
 address-name: Loudoun Valley High School

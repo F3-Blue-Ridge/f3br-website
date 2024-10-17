@@ -10,10 +10,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "The 2024 The IronPax Challenge is underway! "
-  message_attention_word: 'ATTENTION:'
-  url_action_word: 'Regsiter today'
-  url: https://docs.google.com/forms/d/e/1FAIpQLSfAH6sdMjfCwrhnlWwf91nRYlQCwFQK9moTn1TKHxhPEvDimQ/viewform
+  message: "It might be getting colder outside, but our events list is heating up!"
+  message_attention_word: 'WINTER IS COMING:'
+  url_action_word: 'Check out all the events'
+  url: /news
 
 # Homepage
 excerpts:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The IRONPAX CHALLENGE 2023"
+title:  "The IRONPAX Challenge 2023"
 date:   2023-09-01 12:58:51 -0500
 categories: EVENT
 ---

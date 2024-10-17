@@ -4,6 +4,7 @@ title: "Winter Challenge 2024"
 categories: event
 date:   2023-12-20
 thumbnail: /assets/img/posts/winter-challenge-2024.webp
+excerpt: "This winter, commit to F3 Blue Ridge and live out the three Fs. It won't be easy, but the rewards are worth it. Earn a limited-edition shirt for your dedication."
 ---
 <br />
 
