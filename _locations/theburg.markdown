@@ -5,13 +5,13 @@ nav-dark-mode: true
 thumbnail: /assets/img/locations/theburg/thumbnail.webp
 thumbnail-back: /assets/img/locations/theburg/slider-image-1.webp
 workout-type: Bootcamp
-address-name: Loudoun County Garage
-address: 146 Loudoun St SW, Leesburg, VA 20175
-google-maps-url: https://maps.app.goo.gl/7MnrVohF7f4frs1S7
+address-name: Pennington Lot & Garage
+address: 210 Church St NE, Leesburg, VA 20176
+google-maps-url: https://maps.app.goo.gl/rrFA93NMdmvmxTSC9
 siteQ: Bail
 weekdays: MON, WED, FRI - 0530
 weekends:
-location-map-embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18944.896498647406!2d-77.5630638!3d39.11383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d613dce93f%3A0xd5fb6bb8870891f8!2sLoudoun%20County%20Garage!5e1!3m2!1sen!2sus!4v1727441036692!5m2!1sen!2sus
+location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5215.634510968243!2d-77.56329343705744!3d39.117317071559896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63d7d4e43d9fb%3A0x346b65d3a14e31ee!2sPennington%20Lot!5e1!3m2!1sen!2sus!4v1729171082951!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
   - name: The Burg
