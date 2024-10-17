@@ -70,6 +70,11 @@ collections:
     output: true
     permalink: /locations/:title/
 
+defaults:
+  - name: environment
+    values:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
 # News Posts
 defaults:
 -
@@ -80,6 +85,3 @@ defaults:
       is_post: true
       layout: post
       permalink: /news/:categories/:title/
-    name: environment
-    values:
-      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
