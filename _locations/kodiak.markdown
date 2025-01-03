@@ -16,8 +16,8 @@ location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.3
 quicksheet:
   - name: Kodiak
     founded: June 21, 2021
-    schedule: Mon - 0530, Wed - 0530, Fri - 0530, Sat - 0800 (Kid "2.0" friendly)
-    siteQ: Raphael
+    schedule: Mon - 0530, Wed - 0530, Fri - 0530 (Wolverine location), Sat - contact for times (kid "2.0" friendly)
+    siteQ: Roadrunner
 slider-images:
   - image1: /assets/img/locations/kodiak/slider-image-1.webp
     image2: /assets/img/locations/kodiak/slider-image-2.webp
@@ -43,3 +43,7 @@ Being held outdoors allows AO-KODIAK members to enjoy the fresh air, natural sur
 <br />
 
 AO-KODIAK offers a supportive and inclusive environment for people of all fitness levels and abilities. Whether someone is a beginner or an experienced athlete, they can participate and modify exercises according to their own capabilities. The group fosters a sense of camaraderie and motivation through group challenges, encouragement, and shared goals. By bringing together like-minded individuals who prioritize fitness and an active lifestyle, AO-KODIAK creates a community where members can have fun, achieve their fitness goals, and support one another in their wellness journey.
+
+<br />
+
+**Ready to be part of something bigger and push your limits with a supportive crew? Come out and join us for our next workout—you won’t regret it!**
