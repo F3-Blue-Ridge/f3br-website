@@ -10,9 +10,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "It might be getting colder outside, but our events list is heating up!"
-  message_attention_word: 'WINTER IS COMING:'
-  url_action_word: 'Check out all the events'
+  message: "Get ready for May's HERO MONTH, where we'll honor fallen heroes through epic WODs across the major AOs!"
+  message_attention_word: 'ATTENTION:'
+  url_action_word: 'Learn More'
   url: /news
 
 # Homepage
