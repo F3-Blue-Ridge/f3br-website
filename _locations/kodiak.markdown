@@ -8,15 +8,15 @@ workout-type: Bootcamp
 address-name: Round Hill Elementary School
 address: 17115 Evening Star Dr, Round Hill, VA 20141
 google-maps-url: https://goo.gl/maps/kwNTvUdTcibYq58Q9
-siteQ: Raphael
-weekdays: MON, WED, FRI - 0530
-weekends: SAT - 0800
+siteQ: Road Runner
+weekdays: MON, WED - 0530
+weekends: SAT - 0700
 location-map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.3290065200113!2d-77.7624685!3d39.1444979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b60fb4000352dd%3A0x2656ba275d9aa2e5!2sRound%20Hill%20Elementary%20School!5e0!3m2!1sen!2sus!4v1693527145365!5m2!1sen!2sus
 #f3-map-embed:  https://map.f3nation.com/?lat=39.16677303291412&lon=-78.15840661175892&zoom=16
 quicksheet:
   - name: Kodiak
     founded: June 21, 2021
-    schedule: Mon - 0530, Wed - 0530, Fri - 0530 (Wolverine location), Sat - contact for times (kid "2.0" friendly)
+    schedule: Mon - 0530, Wed - 0530, Sat - 0700 (kid "2.0" friendly)
     siteQ: Roadrunner
 slider-images:
   - image1: /assets/img/locations/kodiak/slider-image-1.webp
