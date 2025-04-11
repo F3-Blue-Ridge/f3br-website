@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/jonaharagon/jekyll-bootstrap-theme#readme",
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3"
   }
 }
