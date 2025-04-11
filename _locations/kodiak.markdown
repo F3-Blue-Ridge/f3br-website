@@ -17,7 +17,7 @@ quicksheet:
   - name: Kodiak
     founded: June 21, 2021
     schedule: Mon - 0530, Wed - 0530, Sat - 0700 (kid "2.0" friendly)
-    siteQ: Roadrunner
+    siteQ: Road Runner
 slider-images:
   - image1: /assets/img/locations/kodiak/slider-image-1.webp
     image2: /assets/img/locations/kodiak/slider-image-2.webp

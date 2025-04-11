@@ -17,7 +17,7 @@ quicksheet:
   - name: The Burn
     founded: July 13, 2023
     schedule: Thurs - 0530
-    siteQ: Mullet
+    siteQ: Fusion
 slider-images:
   - image1: /assets/img/locations/theburn/slider-image-1.webp
     image2: /assets/img/locations/theburn/slider-image-2.webp
