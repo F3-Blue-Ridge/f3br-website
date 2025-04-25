@@ -28,8 +28,8 @@ submenu: # It would be nice to be able to dynamically populate this...see https:
     url: /locations/theburg
   - title: The Burn
     url: /locations/theburn
-  - title: The Settlement
-    url: /locations/thesettlement
+  # - title: The Settlement
+  #   url: /locations/thesettlement
   - title: Valhalla
     url: /locations/valhalla
   - title: Wolverine
