@@ -10,10 +10,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Global Info Banner
 info_banner:
   show: true
-  message: "Stay strong, stay consistent! Join your brothers in the gloom and make this your strongest season yet."
-  message_attention_word: '☀️ SUMMER IS HERE:'
-  url_action_word: 'View Events'
-  url: /news
+  message: "Forge strength, sharpen leadership, and push your limits during three days of challenge at Freedom Ops GTE 74."
+  message_attention_word: 'NEW EVENT: '
+  url_action_word: 'LEARN MORE'
+  url: https://event.freedom-ops.fit/gte-74
 
 # Homepage
 excerpts:
